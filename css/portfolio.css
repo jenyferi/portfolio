@@ -7,6 +7,14 @@ body {
 	padding: 0px;
 }
 
+::selection {
+	background: #F59AA5; /* Safari */
+}
+
+::-moz-selection {
+	background: #F59AA5; /* Firefox */
+}
+
 p {
 	margin: 0px;
 	padding: 0px;
@@ -131,25 +139,46 @@ p {
 	margin-bottom: 200px;
 }
 
-#contact-block {
+#me {
 	margin-left: 300px;
 	margin-top: 50px;
-}
-
-#me {
 	border: 10px #ffffff solid;
 }
 
-#contact-block ul {
+#contact-images {
+	padding: 0px;
+	text-align: center;
 	margin-top: -200px;
-	margin-left: 250px;
 	list-style: none;
+}
+
+#contact-images li {
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 2px;
+}
+
+#contact-text {
+	padding: 0px;
+	list-style: none;
+	margin-top: -180px;
+	padding-left: 20px;
+	margin-left: 51%;
 	font-size: 1.3em;
 }
 
-#contact-block a {
+#contact-text li {
+	margin-top: 0px;
+	margin-bottom: 15px;
+}
+
+#contact-text a {
 	color: #ffffff;
 	text-decoration: none;
+}
+
+#contact-text a:hover {
+	color: #dddddd;
 }
 
 #footer {
