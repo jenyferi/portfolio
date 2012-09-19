@@ -12,10 +12,10 @@
   <body>
     <div id="navbar">
         <ul>
-          <li><a class="nav-element" href="#">About</a></li>
-          <li><a class="nav-element" href="#">Work</a></li>
+          <li><a class="nav-about nav-element" href="#about">About</a></li>
+          <li><a class="nav-element" href="#work">Work</a></li>
           <li><a id="logo" href=""><img src="img/logo.png" alt=""></a></li>
-          <li><a class="nav-element" href="#">Contact</a></li>
+          <li><a class="nav-element" href="#contact">Contact</a></li>
           <li><a class="nav-element" href="#">Blog</a></li>
         </ul>
     </div>
@@ -26,21 +26,20 @@
     </div>
 
     <div id="about">
-      <div class="arrow right-arrow">About</div>
+      <div class="nav-about arrow right-arrow"><a name="about" href="#about">About</a></div>
       <div id="about-caption">I've worked at some places and been to some schools.</div>
-      <div id="chart">
-        <button id="size" class="last">Size</button>
-        <button id="count" class="first active">Count</button>
-      </div>
+      <div id="chart"></div>
     </div>
 
     <div id="work">
-      <div class="arrow left-arrow">Work</div>
+      <div class="arrow left-arrow"><a name="work" href="#work">Work</a></div>
       <div id="work-caption">Take a look at my work.</div>
+      <div id="workbox"></div>
+      <div id="workbox-title">Title</div>
     </div>
 
     <div id="contact">
-      <div class="arrow right-arrow">Contact</div>
+      <div class="arrow right-arrow"><a name="contact" href="#contact">Contact</a></div>
       <div id="contact-caption">Get in touch!</div>
       <img id="me" src="img/me.png" alt="">
       <ul id="contact-images">
@@ -49,7 +48,6 @@
         <li><a href="http://www.linkedin.com/in/jennymlin" target="_blank"><img src="img/linkedin.png"></a></li>
         <li><a href="http://pinterest.com/jenyferi/design/"target="_blank"><img src="img/pinterest.png"></a></li>
       </ul>
-
       <ul id="contact-text">
         <li><a href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny">jenyferi@gmail.com</a></li>
         <li><a href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank">Resume (PDF)</a></li>
@@ -63,6 +61,7 @@
     </div>
 
     <script type="text/javascript" src="js/sunburst.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
 
   </body>
 </html>

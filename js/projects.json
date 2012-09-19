@@ -1,0 +1,23 @@
+{
+	"name": "projects",
+	"children": [
+		{
+			"name": "Häagen-Dazs Animated ads",
+			"content": "<object width="300" height="250">
+				<param name="movie" value="http://jennylin.s3.amazonaws.com/portfolio/images/projects/haagen/haagen_five.swf">
+				<embed src="http://jennylin.s3.amazonaws.com/portfolio/images/projects/haagen/haagen_five.swf" width="300" height="250">
+				</embed>
+				</object>
+
+				<object width="728" height="90">
+				<param name="movie" value="http://jennylin.s3.amazonaws.com/portfolio/images/projects/haagen/haagen_five2.swf">
+				<embed src="http://jennylin.s3.amazonaws.com/portfolio/images/projects/haagen/haagen_five2.swf" width="728" height="90">
+				</embed>
+				</object>
+
+				These Häagen-Dazs units were developed as part of the larger <a href="http://soapbox5.com/timecapsule.php" target="_blank">E5 campaign</a>, encouraging users to write down their top five items in a five-year time capsule to promote the new <a href="http://www.haagendazs.com/products/five.aspx" target="_blank">Häagen-Dazs Five</a> ice cream. 
+
+				I worked as the lead animator and developer on these ads at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. The animations were created using <a href="http://www.greensock.com/tweenlite/" target="_blank">TweenLite</a>, and the units were trafficked through <a href="http://www.pointroll.com/" target="_blank">PointRoll</a>."
+		}
+	]
+}

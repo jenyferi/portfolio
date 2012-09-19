@@ -64,7 +64,7 @@ p {
 
 #intro {
 	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 	text-align: center;
 }
 
@@ -99,6 +99,11 @@ p {
 	padding-top: 37px;
 }
 
+.arrow a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
 .right-arrow {
 	background-image:url('../img/arrow_right.png');
 }
@@ -131,10 +136,34 @@ p {
 #about {
 }
 
+#chart {
+	margin-top: 50px;
+	text-align: center;
+}
+
 #work {
+	margin-top: 50px;
+}
+
+#workbox {
+	clear: both;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 400px;
+	background-color: #cccccc;
+	border: 10px #ffffff solid;
+}
+
+#workbox-title {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 1.3em;
 }
 
 #contact {
+	margin-top: 50px;
 	clear: right;
 	margin-bottom: 200px;
 }

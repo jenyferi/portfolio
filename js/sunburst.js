@@ -1,5 +1,5 @@
-var width = 300,
-	height = 300,
+var width = 400,
+	height = 400,
 	radius = Math.min(width, height) / 2;
 	//color = d3.scale.category20c();
 
@@ -58,20 +58,15 @@ d3.json("js/flare.json", function(json) {
     	}
     });
 
-	startSize();
-
-	d3.select("#size").on("click", function() {
-		startSize();
-	});
-
-	d3.select("#count").on("click", function() {
-		path.data(partition.value(function(d) {
+    $(".nav-about").click(function(){
+    	//to go back to counts
+    	/*path.data(partition.value(function(d) {
 			return 1;
-		})).transition().duration(1500).attrTween("d", arcTween);
+		})).transition().duration(0).attrTween("d", arcTween);*/
 
-		d3.select("#size").classed("active", false);
-		d3.select("#count").classed("active", true);
-	});
+    	//to go to size
+		startSize();
+    });
 
 	function startSize(){
 		path.data(partition.value(function(d) {
