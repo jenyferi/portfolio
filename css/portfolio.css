@@ -43,7 +43,7 @@ li {
 .emphasis {
 	color: #D97E8E;
 	font-family: 'Cookie', cursive;
-	font-size: 1.6em;
+	font-size: 2.0em;
 	padding-left: 5px;
 	padding-right: 5px;
 }
@@ -66,7 +66,8 @@ li {
 	margin-left: auto;
 	margin-right: auto;
 	width: 125px;
-	height: 150px;
+	height: 143px;
+	background-image:url('../img/sheep_blue.png');
 }
 
 #intro-top {
@@ -158,65 +159,28 @@ li {
 
 #contact-images li {
 	display: inline;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
 	margin-top: 0px;
-	margin-bottom: 2px;
+	margin-bottom: 5px;
 }
 
 #link-captions {
 	padding: 0px;
 	text-align: center;
-	margin-top: -60px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 #link-captions li {
-	text-align: left;
-	position: absolute;
 	display: inline;
-}
-
-#email-caption{
-	margin-left: -140px;
-	transform:rotate(-7deg);
-	-ms-transform:rotate(-7deg); /* IE 9 */
-	-moz-transform:rotate(-7deg); /* Firefox */
-	-webkit-transform:rotate(-7deg); /* Safari and Chrome */
-	-o-transform:rotate(-7deg); /* Opera */
-}
-
-#resume-caption{
-	margin-left: -15px;
-	transform:rotate(5deg);
-	-ms-transform:rotate(5deg); /* IE 9 */
-	-moz-transform:rotate(5deg); /* Firefox */
-	-webkit-transform:rotate(5deg); /* Safari and Chrome */
-	-o-transform:rotate(5deg); /* Opera */
-}
-
-#linkedin-caption{
-	margin-left: 50px;
-	transform:rotate(-7deg);
-	-ms-transform:rotate(-7deg); /* IE 9 */
-	-moz-transform:rotate(-7deg); /* Firefox */
-	-webkit-transform:rotate(-7deg); /* Safari and Chrome */
-	-o-transform:rotate(-7deg); /* Opera */
-}
-
-#pinterest-caption{
-	margin-left: 145px;
-	transform:rotate(7deg);
-	-ms-transform:rotate(7deg); /* IE 9 */
-	-moz-transform:rotate(7deg); /* Firefox */
-	-webkit-transform:rotate(7deg); /* Safari and Chrome */
-	-o-transform:rotate(7deg); /* Opera */
+	padding-left: 20px;
+	padding-right: 0px;
 }
 
 #footer {
 	background-color: #8b796d;
-	margin-top: 100px;
+	margin-top: 50px;
     height: 20px;
     width: 100%;
     padding-top: 10px;

@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	var fadetime = 100;
 	
 	//adjusting text shadows based on browser
 	if($.browser.chrome){
@@ -10,33 +9,6 @@ $(document).ready(function () {
 	if($.browser.mozilla){
 		$("#intro-top").css("text-shadow", "0.005em 0.02em 0.04em #666666");
 	}
-
-	//fade out all of the link captions to begin with
-	$("#link-captions li").fadeTo(0, 0);
-
-	$("#email-link").hover(function(){
-	  $("#email-caption").fadeTo(fadetime, 1);
-	  },function(){
-	  $("#email-caption").fadeTo(fadetime, 0);
-	});
-
-	$("#resume-link").hover(function(){
-	  $("#resume-caption").fadeTo(fadetime, 1);
-	  },function(){
-	  $("#resume-caption").fadeTo(fadetime, 0);
-	});
-
-	$("#linkedin-link").hover(function(){
-	  $("#linkedin-caption").fadeTo(fadetime, 1);
-	  },function(){
-	  $("#linkedin-caption").fadeTo(fadetime, 0);
-	});
-
-	$("#pinterest-link").hover(function(){
-	  $("#pinterest-caption").fadeTo(fadetime, 1);
-	  },function(){
-	  $("#pinterest-caption").fadeTo(fadetime, 0);
-	});
 
 	/*$("$pinterest-img").hover(
 		this.src = this.src.replace("img/pinterest_off.png","img/pinterest_on.png");
