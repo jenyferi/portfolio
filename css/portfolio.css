@@ -25,6 +25,17 @@ a {
 	color: #86C5C3;
 }
 
+ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
 #navbar{
 	background-color: #8b796d;
     height: 20px;
@@ -38,7 +49,6 @@ a {
 	padding: 0px;
 	font-size: 1.3em;
 	color: #ffffff;
-	list-style: none;
 }
 
 #intro-top {
@@ -48,6 +58,7 @@ a {
 	font-weight: 100;
 	font-size: 3.9em;
 	text-transform: uppercase;
+	text-shadow: 0.02em 0.03em 0.04em #666666;
 }
 
 #intro-second {
@@ -62,6 +73,12 @@ a {
 	font-size: 1.6em;
 	padding-left: 5px;
 	padding-right: 5px;
+}
+
+.handwritten {
+	font-family: 'Waiting for the Sunrise', cursive;
+	font-size: 1.2em;
+	color: #B3A79F;
 }
 
 .arrow {
@@ -146,7 +163,6 @@ a {
 	text-align: center;
 	padding: 0px;
 	margin-top: 10px;
-	list-style: none;
 }
 
 #contact-images li {
@@ -155,6 +171,22 @@ a {
 	padding-left: 20px;
 	margin-top: 0px;
 	margin-bottom: 2px;
+}
+
+#link-captions {
+	text-align: center;
+}
+
+#link-captions li {
+	display: inline;
+}
+
+#pinterest-caption{
+	transform:rotate(35deg);
+	-ms-transform:rotate(35deg); /* IE 9 */
+	-moz-transform:rotate(35deg); /* Firefox */
+	-webkit-transform:rotate(35deg); /* Safari and Chrome */
+	-o-transform:rotate(35deg); /* Opera */
 }
 
 #footer {

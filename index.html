@@ -4,10 +4,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <title>Jenny Lin</title>
     <link href="css/portfolio.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/d3.v2.js"></script>
     <script type="text/javascript" src="js/swfobject.js"></script>
   </head>
@@ -25,10 +25,17 @@
       <div id="contact-caption">Get in touch!</div>-->
       <img id="me" src="img/me.png" alt="">
       <ul id="contact-images">
-        <li><a href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny"><img src="img/email.png"></a></li>
-        <li><a href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" rel="tooltip" title="hello" target="_blank"><img src="img/resume.png"></a></li>
-        <li><a href="http://www.linkedin.com/in/jennymlin" target="_blank"><img src="img/linkedin.png"></a></li>
-        <li><a href="http://pinterest.com/jenyferi/design/"target="_blank"><img src="img/pinterest.png"></a></li>
+        <li><a id="email-link" href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny"><img src="img/email.png"></a></li>
+        <li><a id="resume-link" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank"><img src="img/resume.png"></a></li>
+        <li><a id="linkedin-link" href="http://www.linkedin.com/in/jennymlin" target="_blank"><img src="img/linkedin.png"></a></li>
+        <li><a id="pinterest-link" href="http://pinterest.com/jenyferi/design/"target="_blank"><img src="img/pinterest.png"></a></li>
+      </ul>
+
+      <ul id="link-captions">
+        <li id="email-caption" class="handwritten">Email</li>
+        <li id="resume-caption" class="handwritten">Resume (PDF)</li>
+        <li id="linkedin-caption" class="handwritten">Linkedin</li>
+        <li id="pinterest-caption" class="handwritten">Pinterest</li>
       </ul>
 
       <p id="intro-second">I'm a <span class="emphasis">designer</span> and <span class="emphasis">web developer</span><br>in San Francisco.</p>
@@ -63,7 +70,6 @@
     </div>
 
     <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
     <script type="text/javascript" src="js/sunburst.js"></script>
 
