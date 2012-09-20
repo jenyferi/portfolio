@@ -7,19 +7,25 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/d3.v2.js"></script>
     <script type="text/javascript" src="js/swfobject.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
   </head>
   <body>
-    <div id="logo">
-      <a href=""><img src="img/logo.png" alt=""></a>
+    <div id="navbar">
+        <ul>
+          <li><a class="nav-about nav-element" href="#about">About</a></li>
+          <li><a class="nav-element" href="#work">Work</a></li>
+          <li><a id="logo" href=""><img src="img/logo.png" alt=""></a></li>
+          <li><a class="nav-element" href="#contact">Contact</a></li>
+          <li><a class="nav-element" href="#">Blog</a></li>
+        </ul>
     </div>
 
     <div id ="intro">
       <p id="intro-top">Hello<br>I'm Jenny,</p>
-      <p id="intro-second">a designer and web developer<br>in San Francisco.</p>
+      <p id="intro-second">a <span class="emphasis">designer</span> and <span class="emphasis">web developer</span><br>in San Francisco.</p>
     </div>
 
     <div id="contact">
