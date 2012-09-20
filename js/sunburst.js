@@ -88,7 +88,7 @@ function getcolor(d){
 	}
 	//WORK
 	else if (node.key == "work"){
-		return d3.rgb("#d95377");
+		return d3.rgb("#86C5C3");
 	}
 }
 

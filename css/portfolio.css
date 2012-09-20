@@ -8,11 +8,11 @@ body {
 }
 
 ::selection {
-	background: #F59AA5; /* Safari */
+	background: #86C5C3; /* Safari */
 }
 
 ::-moz-selection {
-	background: #F59AA5; /* Firefox */
+	background: #86C5C3; /* Firefox */
 }
 
 p {
@@ -22,59 +22,28 @@ p {
 
 a {
 	text-decoration: none;
-	color: #d95377;
+	color: #86C5C3;
 }
 
 #navbar{
 	background-color: #8b796d;
-    height: 60px;
+    height: 20px;
     width: 100%;
-    border-bottom: 1px #d8d4cf solid;
+    border-bottom: 1px #aaaaaa solid;
 }
 
 #navbar  ul {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
 	text-align: center;
 	margin: 0px;
 	padding: 0px;
 	font-size: 1.3em;
 	color: #ffffff;
-	text-transform: uppercase;
 	list-style: none;
 }
 
-#navbar li {
-	display: inline;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-#navbar a {
-	vertical-align: top;
-	display: inline-block;
-	color: #ffffff;
-}
-
-#navbar a:visited {
-	color: #ffffff;
-}
-
-#navbar a:hover {
-	color: #cccccc;
-}
-
-.nav-element {
-	margin-top: 17px;
-}
-
-#intro {
-	margin-top: 100px;
-	margin-bottom: 20px;
-	text-align: center;
-}
-
 #intro-top {
+	margin-top: 140px;
+	text-align: center;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	font-size: 3.9em;
@@ -82,12 +51,13 @@ a {
 }
 
 #intro-second {
+	text-align: center;
 	margin-top: 20px;
 	font-size: 1.5em;
 }
 
 .emphasis {
-	color: #d95377;
+	color: #86C5C3;
 	font-family: 'Cookie', cursive;
 	font-size: 1.6em;
 	padding-left: 5px;
@@ -95,43 +65,21 @@ a {
 }
 
 .arrow {
-	height: 124px;
-	width: 220px;
+	height: 125px;
+	width: 415px;
 	text-align: center;
 	font-family: 'Cookie', cursive;
 	font-size: 2.7em;
 	background-repeat: no-repeat;
 	padding-top: 37px;
+	background-image:url('../img/arrow_blue.png');
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .arrow a {
 	height: 20px;
 	color: #ffffff;
-}
-
-.arrow a#about-link {
-	margin-right: 20px;
-}
-
-.arrow a#work-link {
-	margin-left: 22px;
-}
-
-.arrow a#contact-link {
-	margin-right: 12px;
-}
-
-.right-arrow {
-	background-image:url('../img/arrow_right.png');
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.left-arrow {
-	background-image:url('../img/arrow_left.png');
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
 }
 
 #about-caption {
@@ -144,16 +92,10 @@ a {
 	text-align: center;
 }
 
-#contact-caption {
-	font-size: 1.4em;
-	text-align: center;
-}
-
 #about {
 }
 
 #chart {
-	clear: both;
 	text-align: center;
 }
 
@@ -162,7 +104,6 @@ a {
 }
 
 .workbox {
-	clear: both;;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
@@ -190,12 +131,11 @@ a {
 }
 
 #contact {
-	margin-top: 50px;
-	margin-bottom: 120px;
+	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
 #me {
-	clear: both;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -203,56 +143,32 @@ a {
 }
 
 #contact-images {
-	padding: 0px;
 	text-align: center;
-	margin-top: -200px;
+	padding: 0px;
+	margin-top: 10px;
 	list-style: none;
 }
 
 #contact-images li {
-	padding: 0px;
+	display: inline;
+	padding-right: 20px;
+	padding-left: 20px;
 	margin-top: 0px;
 	margin-bottom: 2px;
 }
 
-#contact-text {
-	padding: 0px;
-	list-style: none;
-	margin-top: -180px;
-	padding-left: 20px;
-	margin-left: 51%;
-	font-size: 1.3em;
-}
-
-#contact-text li {
-	margin-top: 0px;
-	margin-bottom: 15px;
-}
-
-#contact-text a {
-	color: #ffffff;
-}
-
-#contact-text a:hover {
-	color: #dddddd;
-}
-
 #footer {
-	clear: both;
 	background-color: #8b796d;
 	margin-top: 50px;
     height: 20px;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: 1px #d8d4cf solid;
+    border-top: 1px #aaaaaa solid;
 }
 
 #copyright {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
 	color: #ffffff;
 	text-align: center;
-	text-transform: uppercase;
 	font-size: 0.9em;
 }
