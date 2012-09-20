@@ -1,6 +1,5 @@
-var fadetime = 100;
-
 $(document).ready(function () {
+	var fadetime = 100;
 	
 	//adjusting text shadows based on browser
 	if($.browser.chrome){
@@ -12,7 +11,8 @@ $(document).ready(function () {
 		$("#intro-top").css("text-shadow", "0.005em 0.02em 0.04em #666666");
 	}
 
-	//$("#link-captions li").fadeTo(0, 0);
+	//fade out all of the link captions to begin with
+	$("#link-captions li").fadeTo(0, 0);
 
 	$("#email-link").hover(function(){
 	  $("#email-caption").fadeTo(fadetime, 1);
@@ -37,6 +37,10 @@ $(document).ready(function () {
 	  },function(){
 	  $("#pinterest-caption").fadeTo(fadetime, 0);
 	});
+
+	/*$("$pinterest-img").hover(
+		this.src = this.src.replace("img/pinterest_off.png","img/pinterest_on.png");
+	);*/
 
 	swfobject.embedSWF("http://jennylin.s3.amazonaws.com/portfolio/images/projects/haagen/haagen_five.swf", "haagen1", "300", "250", "9.0.0", "js/expressInstall.swf");
 	swfobject.embedSWF("http://jennylin.s3.amazonaws.com/portfolio/images/projects/haagen/haagen_five2.swf", "haagen2", "720", "90", "9.0.0", "js/expressInstall.swf");
