@@ -20,6 +20,11 @@ p {
 	padding: 0px;
 }
 
+a {
+	text-decoration: none;
+	color: #d95377;
+}
+
 #navbar{
 	background-color: #8b796d;
     height: 70px;
@@ -47,7 +52,6 @@ p {
 	vertical-align: top;
 	display: inline-block;
 	color: #ffffff;
-	text-decoration: none;
 }
 
 #navbar a:visited {
@@ -64,7 +68,7 @@ p {
 
 #intro {
 	margin-top: 100px;
-	margin-bottom: 80px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
@@ -96,81 +100,110 @@ p {
 	font-family: 'Cookie', cursive;
 	font-size: 2.7em;
 	background-repeat: no-repeat;
-	padding-top: 37px;
 }
 
 .arrow a {
-	text-decoration: none;
+	display: block;
+	margin-top: 37px;
+	height: 20px;
 	color: #ffffff;
+}
+
+.arrow a#about-link {
+	margin-right: 20px;
+}
+
+.arrow a#work-link {
+	margin-left: 22px;
+}
+
+.arrow a#contact-link {
+	margin-right: 12px;
 }
 
 .right-arrow {
 	background-image:url('../img/arrow_right.png');
+	float: left;
 }
 
 .left-arrow {
 	background-image:url('../img/arrow_left.png');
 	float: right;
+	margin-bottom: 10px;
 }
 
 #about-caption {
-	font-size: 1.3em;
-	margin-top: -115px;
-	margin-left: 300px;
+	float: left;
+	font-size: 1.4em;
+	margin-top: 45px;
+	margin-left: 70px;
 }
 
 #work-caption {
 	float: right;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	text-align: right;
 	margin-right: 70px;
-	margin-top: 45px;
+	margin-top: 45px;;
 }
 
 #contact-caption {
-	font-size: 1.3em;
-	margin-top: -115px;
-	margin-left: 300px;
+	float: left;
+	font-size: 1.4em;
+	margin-top: 45px;
+	margin-left: 70px;
 }
 
 #about {
 }
 
 #chart {
-	margin-top: 50px;
+	clear: both;
 	text-align: center;
 }
 
 #work {
-	margin-top: 50px;
+	margin-top: 10px;
 }
 
-#workbox {
-	clear: both;
-	margin-top: 50px;
+.workbox {
+	clear: both;;
 	margin-left: auto;
 	margin-right: auto;
-	width: 600px;
+	text-align: center;
+	width: 750px;
 	height: 400px;
 	background-color: #cccccc;
 	border: 10px #ffffff solid;
 }
 
-#workbox-title {
-	margin-top: 10px;
-	text-align: center;
-	font-size: 1.3em;
+.workbox-title {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	font-size: 1.1em;
+	width: 750px;
+	text-align: justify;
+}
+
+#projects {
+}
+
+#haagen1 {
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 #contact {
 	margin-top: 50px;
-	clear: right;
-	margin-bottom: 200px;
+	margin-bottom: 120px;
 }
 
 #me {
+	clear: both;
+	display: block;
 	margin-left: 25%;
-	margin-top: 50px;
+	margin-top: 100px;
 	border: 10px #ffffff solid;
 }
 
@@ -203,7 +236,6 @@ p {
 
 #contact-text a {
 	color: #ffffff;
-	text-decoration: none;
 }
 
 #contact-text a:hover {
@@ -224,5 +256,3 @@ p {
 	text-align: center;
 	font-size: 1.1em;
 }
-
-
