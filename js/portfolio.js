@@ -3,3 +3,6 @@ swfobject.embedSWF("http://jennylin.s3.amazonaws.com/portfolio/images/projects/h
 swfobject.embedSWF("http://jennylin.s3.amazonaws.com/portfolio/images/projects/quaker/quaker_apple.swf", "quaker1", "300", "250", "9.0.0", "js/expressInstall.swf");
 swfobject.embedSWF("http://jennylin.s3.amazonaws.com/portfolio/images/projects/quaker/quaker_coconut.swf", "quaker2", "300", "250", "9.0.0", "js/expressInstall.swf");
 
+$(document).ready(function () {
+    $("[rel=tooltip]").tooltip();
+  });
