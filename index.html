@@ -4,48 +4,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <title>Jenny Lin</title>
     <link href="css/portfolio.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300, 700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'> 
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300, 100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/d3.v2.js"></script>
     <script type="text/javascript" src="js/swfobject.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
   </head>
   <body>
-    <div id="navbar">
-        <ul>
-          <li><a class="nav-about nav-element" href="#about">About</a></li>
-          <li><a class="nav-element" href="#work">Work</a></li>
-          <li><a id="logo" href=""><img src="img/logo.png" alt=""></a></li>
-          <li><a class="nav-element" href="#contact">Contact</a></li>
-          <li><a class="nav-element" href="#">Blog</a></li>
-        </ul>
+    <div id="logo">
+      <a href=""><img src="img/logo.png" alt=""></a>
     </div>
 
     <div id ="intro">
       <p id="intro-top">Hello<br>I'm Jenny,</p>
-      <p id="intro-second">a <span class="emphasis">designer</span> and <span class="emphasis">web developer</span><br>in San Francisco.</p>
-    </div>
-
-    <div id="about">
-      <div class="nav-about arrow right-arrow"><a id="about-link" name="about" href="#about">About</a></div>
-      <div id="about-caption">I've worked at some places and been to some schools.</div>
-      <div id="chart"></div>
-    </div>
-
-    <div id="work">
-      <div class="arrow left-arrow"><a id="work-link" name="work" href="#work">Work</a></div>
-      <div id="work-caption">Take a look at my work.</div>
-
-      <div id="projects">
-        <div id="project1" class="workbox">
-          <div id="haagen1"></div>
-          <div id="haagen2"></div>
-        </div>
-
-        <p class="workbox-title">These Häagen-Dazs units were developed as part of the larger <a href="http://soapbox5.com/timecapsule.php" target="_blank">E5 campaign</a>, encouraging users to write down their top five items in a five-year time capsule to promote the new <a href="http://www.haagendazs.com/products/five.aspx" target="_blank">Häagen-Dazs Five</a> ice cream. I worked as the lead animator and developer on these ads at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. The animations were created using <a href="http://www.greensock.com/tweenlite/" target="_blank">TweenLite</a>, and the units were trafficked through <a href="http://www.pointroll.com/" target="_blank">PointRoll</a>.</p>
-      </div>
-
+      <p id="intro-second">a designer and web developer<br>in San Francisco.</p>
     </div>
 
     <div id="contact">
@@ -64,6 +38,34 @@
         <li><a href="http://www.linkedin.com/in/jennymlin" target="_blank">LinkedIn</a></li>
         <li><a href="http://pinterest.com/jenyferi/design/"target="_blank">Pinterest</a></li>
       </ul>
+    </div>
+
+    <div id="about">
+      <div class="nav-about arrow right-arrow"><a id="about-link" name="about" href="#about">About</a></div>
+      <div id="about-caption">I've worked at some places and been to some schools.</div>
+      <div id="chart"></div>
+    </div>
+
+    <div id="work">
+      <div class="arrow left-arrow"><a id="work-link" name="work" href="#work">Work</a></div>
+      <div id="work-caption">Take a look at my work.</div>
+
+      <div id="projects">
+        <div id="project1" class="workbox">
+          <div id="haagen1"></div>
+          <div id="haagen2"></div>
+        </div>
+
+        <p id ="project1-title" class="workbox-title">
+          These Häagen-Dazs units were developed as part of the larger <a href="http://soapbox5.com/timecapsule.php" target="_blank">E5 campaign</a>, encouraging users to write down their top five items in a five-year time capsule to promote the new <a href="http://www.haagendazs.com/products/five.aspx" target="_blank">Häagen-Dazs Five</a> ice cream. I worked as the lead animator and developer on these ads at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. The animations were created using <a href="http://www.greensock.com/tweenlite/" target="_blank">TweenLite</a>, and the units were trafficked through <a href="http://www.pointroll.com/" target="_blank">PointRoll</a>.
+        </p>
+
+        <!--<div id="project2" class="workbox">
+          <div id="quaker1"></div>
+          <div id="quaker2"></div>
+        </div>-->
+
+      </div>
     </div>
 
     <script type="text/javascript" src="js/sunburst.js"></script>

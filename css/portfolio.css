@@ -1,8 +1,8 @@
 body {
-	font-family: 'Open Sans Condensed', sans-serif;
-	background-image:url('../img/linen_green.png');
+	font-family: 'Vollkorn', serif;
+	background-image:url('../img/papertexture.png');
 	background-repeat: repeat;
-	color: #ffffff;
+	color: #555555;
 	margin: 0px;
 	padding: 0px;
 }
@@ -25,72 +25,25 @@ a {
 	color: #d95377;
 }
 
-#navbar{
-	background-color: #8b796d;
-    height: 70px;
-    width: 100%;
-    border-bottom: 1px #d8d4cf solid;
-}
-
-#navbar  ul {
+#logo {
 	text-align: center;
-	margin: 0px;
-	padding: 0px;
-	font-size: 1.6em;
-	color: #ffffff;
-	text-transform: uppercase;
-	list-style: none;
-}
-
-#navbar li {
-	display: inline;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-#navbar a {
-	vertical-align: top;
-	display: inline-block;
-	color: #ffffff;
-}
-
-#navbar a:visited {
-	color: #ffffff;
-}
-
-#navbar a:hover {
-	color: #cccccc;
-}
-
-.nav-element {
-	margin-top: 17px;
 }
 
 #intro {
-	margin-top: 100px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	text-align: center;
 }
 
 #intro-top {
 	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	font-size: 3.5em;
+	font-size: 3.9em;
 	text-transform: uppercase;
-	text-shadow: 0.02em 0.03em 0.04em #5ba5a1;
 }
 
 #intro-second {
-	font-size: 2em;
-	text-shadow: 0.05em 0.08em 0.04em #5ba5a1;
-}
-
-.emphasis {
-	color: #d95377;
-	font-family: 'Cookie', cursive;
-	font-size: 1.6em;
-	padding-left: 5px;
-	padding-right: 5px;
+	margin-top: 20px;
+	font-size: 1.5em;
 }
 
 .arrow {
@@ -100,11 +53,10 @@ a {
 	font-family: 'Cookie', cursive;
 	font-size: 2.7em;
 	background-repeat: no-repeat;
+	padding-top: 37px;
 }
 
 .arrow a {
-	display: block;
-	margin-top: 37px;
 	height: 20px;
 	color: #ffffff;
 }
@@ -123,35 +75,30 @@ a {
 
 .right-arrow {
 	background-image:url('../img/arrow_right.png');
-	float: left;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .left-arrow {
 	background-image:url('../img/arrow_left.png');
-	float: right;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 10px;
 }
 
 #about-caption {
-	float: left;
 	font-size: 1.4em;
-	margin-top: 45px;
-	margin-left: 70px;
+	text-align: center;
 }
 
 #work-caption {
-	float: right;
 	font-size: 1.4em;
-	text-align: right;
-	margin-right: 70px;
-	margin-top: 45px;;
+	text-align: center;
 }
 
 #contact-caption {
-	float: left;
 	font-size: 1.4em;
-	margin-top: 45px;
-	margin-left: 70px;
+	text-align: center;
 }
 
 #about {
@@ -202,8 +149,8 @@ a {
 #me {
 	clear: both;
 	display: block;
-	margin-left: 25%;
-	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
 	border: 10px #ffffff solid;
 }
 
@@ -244,15 +191,15 @@ a {
 
 #footer {
 	clear: both;
-	background-color: #8b796d;
-    height: 30px;
+    height: 25px;
     width: 100%;
     padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: 1px #d8d4cf solid;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    border-top: 2px #bbbbbb dotted;
 }
 
 #copyright {
 	text-align: center;
-	font-size: 1.1em;
+	font-size: 0.9em;
 }
