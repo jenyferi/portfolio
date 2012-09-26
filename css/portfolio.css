@@ -22,7 +22,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: #D97E8E;
+	color: #e98a9f;
 }
 
 a:hover {
@@ -45,7 +45,7 @@ li {
 }
 
 .curly {
-	color: #D97E8E;
+	color: #e98a9f;
 	font-family: 'Cookie', cursive;
 	font-size: 2.0em;
 	margin-left: 5px;
@@ -117,7 +117,7 @@ li {
 }
 
 #intro-top {
-	margin-top: 100px;
+	margin-top: 130px;
 	color: #636363;
 	margin-bottom: 10px;
 	text-align: center;
@@ -131,7 +131,7 @@ li {
 #intro-second {
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 25px;
+	margin-bottom: 65px;
 	font-size: 1.5em;
 	line-height: 1.4em;
 }
@@ -176,22 +176,29 @@ li {
 }
 
 #history {
-	width: 850px;
+	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 50px;
+	margin-top: 30px;
+	margin-bottom: 80px;
 }
 
 #history li {
-	display: inline;
-	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#history-text {
+	margin-top: 5px;
 }
 
 #history-text li {
+	font-size: 0.9em;
+	vertical-align: top;
 	display: inline-block;
+	text-align: justify;
 	width: 150px;
-	margin-right: 10px;
+	margin-right: 27px;
 }
 
 .workbox {
@@ -201,21 +208,29 @@ li {
 	text-align: center;
 	width: 900px;
 	height: 580px;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 	background-color: #eeeeee;
 	background-image:url('../img/stripe.png');
 }
 
 #button-right {
-	position: absolute;
-	margin-top: 290px;
-	margin-left: 850px;
+	float: right;
+	margin-top: 270px;
+}
+
+#button-right:hover {
+	cursor: pointer;
+	color: #cccccc;
 }
 
 #button-left {
-	position: absolute;
-	margin-top: 290px;
-	margin-left: 5px;
+	float: left;
+	margin-top: 270px;
+}
+
+#button-left:hover {
+	cursor: pointer;
+	color: #cccccc;
 }
 
 .workbox-title {
@@ -278,30 +293,51 @@ li {
 
 #me {
 	display: block;
-	margin-left: 35%;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 25px;
 }
 
 #contact-images {
-	margin-left: 14%;
 	text-align: center;
 	padding: 0px;
-	margin-top: -180px;
+	margin-top: 10px;
 }
 
 #contact-images li {
-	margin-right: 25px;
-	margin-left: 25px;
-	margin-bottom: 5px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
 #link-captions {
-	margin-top: -180px;
-	margin-left: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 330px;
+	padding: 0px;
+	margin-top: -30px;
 }
 
 #link-captions li {
-	margin-bottom: 25px;
+	display: inline;
+}
+
+#email-caption {
+	margin-left: 40px;
+}
+
+#resume-caption {
+	margin-left: 15px;
+}
+
+#linkedin-caption {
+	margin-left: 3px;
+}
+
+#pinterest-caption {
+	margin-left: 0px;
 }
 
 #footer {

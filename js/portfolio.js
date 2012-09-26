@@ -10,11 +10,6 @@ $(document).ready(function () {
 		$("#intro-top").css("text-shadow", "0.005em 0.02em 0.04em #666666");
 	}
 
-	//mouse hover for buttons
-	$(".button").hover(function() {
-  		$(".button").css('cursor', 'pointer');
-	});
-
 	//project swap and fade logic
 	var numProjects = 7;
 	var currProject = 0;
@@ -26,23 +21,25 @@ $(document).ready(function () {
 
 	$(".button").click(function() {
 		var currButtonID = $(this).attr('id');
-  		$("#project" + currProject).fadeOut(fadeTime, function(){
-  			if (currButtonID == "button-right"){
-	  			currProject++;
-	  		}else if (currButtonID == "button-left"){
-	  			currProject--;
-	  		}
+  		$("#project" + currProject).fadeOut(fadeTime, 
+  			function(){
+	  			if (currButtonID == "button-right"){
+		  			currProject++;
+		  		}else if (currButtonID == "button-left"){
+		  			currProject--;
+		  		}
 
-			if (currProject == numProjects){
-				currProject = 0;
-			}
+				if (currProject == numProjects){
+					currProject = 0;
+				}
 
-			if (currProject < 0){
-				currProject = numProjects-1;
-			}
+				if (currProject < 0){
+					currProject = numProjects-1;
+				}
 
-	  		$("#project" + currProject).fadeIn(fadeTime);
-  		});
+		  		$("#project" + currProject).fadeIn(fadeTime);
+  			}
+  		);
 	});
 
 	//link logo hovers
