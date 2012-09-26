@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <meta charset="utf-8"> 
     <title>Jenny Lin</title>
     <link href="css/portfolio.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
@@ -12,38 +11,124 @@
   </head>
   <body>
     <div id="navbar">
-      <a id="logo" href=""></a>
+      <ul>
+        <li><a class="nav-about nav-element" href="#about">About</a></li>
+        <li><a class="nav-element" href="#work">Work</a></li>
+        <li><a id="logo" href=""><img src="img/sheep.png" alt=""></a></li>
+        <li><a class="nav-element" href="#contact">Contact</a></li>
+        <li><a class="nav-element" href="#">Blog</a></li>
+      </ul>
     </div>
 
     <p id="intro-top">Hello<br>I'm Jenny,</p>
-    <p id="intro-second">a <span class="emphasis">designer</span> and <span class="emphasis">web developer</span><br>in San Francisco.</p>
+    <p id="intro-second">a <span class="curly">designer</span> and <span class="curly">web developer</span><br>in San Francisco.</p>
 
     <div id="about">
       <div class="nav-about arrow"><a id="about-link" name="about" href="#about">About</a></div>
-      <div class="arrow-caption">I've learned a variety of things over the years.</div>
-    </div>
+      <div class="arrow-caption">Take a look at my stupid history.</div>
+      <div id="history">
+        <ul>
+          <li><img src="img/computer.png"></li>
+          <li><img src="img/computer.png"></li>
+          <li><img src="img/computer.png"></li>
+          <li><img src="img/computer.png"></li>
+          <li><img src="img/computer.png"></li>
+        </ul>
+        <ul id="history-text">
+          <li>I began studying Computer Science at Cornell University.</li>
+          <li>I began studying Computer Science at Cornell University.</li>
+          <li>I began studying Computer Science at Cornell University.</li>
+          <li>I began studying Computer Science at Cornell University.</li>
+          <li>I began studying Computer Science at Cornell University.</li>
+       </ul>
+    </div><!-- history -->
+      <!--<img id="chart" src="img/chart.png"></div>-->
+    </div><!-- about -->
 
     <div id="work">
       <div class="arrow"><a id="work-link" name="work" href="#work">Work</a></div>
-      <div class="arrow-caption">I've also worked on some projects.</div>
+      <div class="arrow-caption">Take a look at my work.</div>
 
-      <div id="projects">
-        <div id="project1" class="workbox border-standard">
+      <div id="projects" class="workbox border-standard">
+        <div id="button-right" class="button">Right</div>
+        <div id="button-left" class="button">Left</div>
+
+        <div id="project0">
+          <p class="workbox-title">Essential Fives</p>
+          <p class="workbox-caption"><span class="emphasis">with</span> Transistor Studios / Häagen-Dazs</p>
+          <p class="workbox-description">
+            These Häagen-Dazs units were developed as part of the larger <a href="http://soapbox5.com/timecapsule.php" target="_blank">E5 campaign</a>, encouraging users to write down their top five items in a five-year time capsule to promote the new <a href="http://www.haagendazs.com/products/five.aspx" target="_blank">Häagen-Dazs Five</a> ice cream. I worked as the lead animator and developer on these ads at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. The animations were created using <a href="http://www.greensock.com/tweenlite/" target="_blank">TweenLite</a>, and the units were trafficked through <a href="http://www.pointroll.com/" target="_blank">PointRoll</a>.
+          </p>
           <div id="haagen1"></div>
           <div id="haagen2"></div>
-        </div>
+        </div> <!--project0-->
 
-        <p id ="project1-title" class="workbox-title">
-          These Häagen-Dazs units were developed as part of the larger <a href="http://soapbox5.com/timecapsule.php" target="_blank">E5 campaign</a>, encouraging users to write down their top five items in a five-year time capsule to promote the new <a href="http://www.haagendazs.com/products/five.aspx" target="_blank">Häagen-Dazs Five</a> ice cream. I worked as the lead animator and developer on these ads at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. The animations were created using <a href="http://www.greensock.com/tweenlite/" target="_blank">TweenLite</a>, and the units were trafficked through <a href="http://www.pointroll.com/" target="_blank">PointRoll</a>.
-        </p>
-
-        <!--<div id="project2" class="workbox">
+        <div id="project1">
+          <p class="workbox-title">Quaker Experience</p>
+          <p class="workbox-caption"><span class="emphasis">with</span> Transistor Studios / Quaker Oatmeal</p>
+          <p class="workbox-description">
+            These Quaker Oatmeal ads were developed as part of a larger campaign encouraging users to experiment with various <a href="http://www.quakeroats.com/cooking-and-recipes/content/quaker-instant-oats.aspx" target="_blank">Oatmeal Topping Ideas</a>. I worked as the lead Flash animator and developer on these units at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. I worked closely with the 3D modeling artists, compositors, and art director on the concept and development. The ads were trafficked through <a href="http://www.eyewonder.com/" target="_blank">EyeWonder</a>. 
+          </p>
           <div id="quaker1"></div>
           <div id="quaker2"></div>
-        </div>-->
+        </div> <!--project1-->
 
-      </div>
-    </div>
+        <div id="project2">
+          <p class="workbox-title">Castle</p>
+          <p class="workbox-caption"><span class="emphasis">my</span> Personal Project / School of Visual Arts</p>
+          <p class="workbox-description">
+            This interactive scene was created as a prototype for the first scene of a point-and-click fairy tale themed game. Interactions include the click and drag clouds, mouseover trees, and mouseover windmills.  
+          </p>
+          <div id="castle1"></div>
+        </div> <!--project2-->
+
+        <div id="project3">
+          <p class="workbox-title">Forest</p>
+          <p class="workbox-caption"><span class="emphasis">my</span> Personal Project / School of Visual Arts</p>
+          <p class="workbox-description">
+            This forest scene was created as a prototype for the second scene of a point-and-click fairy tale themed Flash game. 
+          </p>
+          <div id="forest1"></div>
+        </div> <!--project3-->
+
+        <div id="project4">
+          <p class="workbox-title">Pirates T-Shirt</p>
+          <p class="workbox-caption"><span class="emphasis">my</span> Personal Project</p>
+          <p class="workbox-description">
+            This shirt design was a submission for a pirates T-shirt contest. I wanted to capture the playful feeling of children playing pirates, a contrast to the other horror-themed design submissions.
+          </p>
+          <div id="pirates1"><img src="img/pirates.png" alt="pirates"></div>
+        </div> <!--project4-->
+
+        <div id="project5">
+          <p class="workbox-title">Tree</p>
+          <p class="workbox-caption"><span class="emphasis">my</span> Personal Project / Cornell University</p>
+          <p class="workbox-description">
+            This motion graphic video was created as a Personal Project to show the effect of life to decay, using a tree as the backdrop. I created four separate drawings, and morphed them together.
+          </p>
+          <div id="tree1"><iframe src="http://player.vimeo.com/video/35948137?title=0&byline=0&portrait=0&color=d46fab&autoplay=1&loop=1" width="400" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+        </div> <!--project5-->
+
+        <div id="project6">
+          <p class="workbox-title">Wild Swans</p>
+          <p class="workbox-caption"><span class="emphasis">my</span> MFA Thesis Project / School of Visual Arts</p>
+          <p class="workbox-description">
+            Wild Swans was created as my <a href="http://mfaca.sva.edu/node/326" target="_blank">MFA thesis project in the Computer Art department</a> at the School of Visual Arts. I illustrated and developed this augmented reality project using ActionScript 3, <a href="http://blog.papervision3d.org/" target="_blank">PaperVision3D</a>, and <a href="http://www.libspark.org/wiki/saqoosha/FLARToolKit/en" target="_blank">FLARToolKit</a>. In this recording, markers were printed on paper and held up to the camera, telling the fairy tale of <a href="http://en.wikipedia.org/wiki/The_Wild_Swans" target="_blank">The Wild Swans</a>.
+          </p>
+          <div id="wildswans1"><iframe src="http://player.vimeo.com/video/35960103?title=0&byline=0&portrait=0&color=d46fab" width="720" height="396" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+        </div> <!--project6-->
+
+        <!--<div id="project7">
+          <p class="workbox-title">Rich Media Gallery Tweets</p>
+          <p class="workbox-caption"><span class="emphasis">with</span> Google / DoubleClick Rich Media Gallery</p>
+          <p class="workbox-description">
+            I designed and developed this interactive unit featuring <a href="http://richmediagallery.com" target="_blank">Rich Media Gallery</a> tweets from the <a href="http://twitter.com/#!/rmgallery" target="_blank">@rmgallery</a> account.
+          </p>
+          <div id="rmgallery1"></div>
+        </div> -->
+
+      </div> <!--projects-->
+    </div> <!--work-->
 
     <div id="contact">
       <div class="arrow"><a id="contact-link" name="contact" href="#contact">Contact</a></div>
@@ -51,15 +136,15 @@
       <img id="me" class="border-standard" src="img/me_small.png" alt="">
 
       <ul id="contact-images">
-        <li><a id="email-link" href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny"><img src="img/email.png"></a></li>
-        <li><a id="resume-link" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank"><img src="img/resume.png"></a></li>
-        <li><a id="linkedin-link" href="http://www.linkedin.com/in/jennymlin" target="_blank"><img src="img/linkedin.png"></a></li>
-        <li><a id="pinterest-link" href="http://pinterest.com/jenyferi/design/"target="_blank"><img id="pinterest-img" src="img/pinterest_off.png"></a></li>
+        <li><a id="email-link" href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny"><img id="email-img" src="img/email.png"></a></li>
+        <li><a id="resume-link" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank"><img id="resume-img" src="img/resume.png"></a></li>
+        <li><a id="linkedin-link" href="http://www.linkedin.com/in/jennymlin" target="_blank"><img id="linkedin-img" src="img/linkedin.png"></a></li>
+        <li><a id="pinterest-link" href="http://pinterest.com/jenyferi/design/"target="_blank"><img id="pinterest-img" src="img/pinterest.png"></a></li>
       </ul>
 
       <ul id="link-captions">
         <li><a id="email-caption" href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny">Email</a></li>
-        <li><a id="resume-caption" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank">Resume (PDF)</a></li>
+        <li><a id="resume-caption" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank">Resume</a></li>
         <li><a id="linkedin-caption" href="http://www.linkedin.com/in/jennymlin" target="_blank">LinkedIn</a></li>
         <li><a id="pinterest-caption" href="http://pinterest.com/jenyferi/design/"target="_blank">Pinterest</a></li>
       </ul>
