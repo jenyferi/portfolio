@@ -3,6 +3,7 @@ body {
 	background-image:url('../img/papertexture.png');
 	background-repeat: repeat;
 	color: #555555;
+	background-color: #eaeaea;
 	margin: 0px;
 	padding: 0px;
 }
@@ -131,12 +132,13 @@ li {
 #intro-second {
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 65px;
+	margin-bottom: 95px;
 	font-size: 1.5em;
 	line-height: 1.4em;
 }
 
 .arrow {
+	margin-top: -48px;
 	height: 96px;
 	width: 565px;
 	text-align: center;
@@ -167,6 +169,12 @@ li {
 	margin-top: 5px;
 }
 
+.line{
+	border-top: 2px #bbbbbb dotted;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
 #chart {
 	display: block;
 	margin-left: auto;
@@ -176,11 +184,11 @@ li {
 }
 
 #history {
-	width: 900px;
+	width: 932px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
-	margin-bottom: 80px;
+	margin-bottom: 110px;
 }
 
 #history li {
@@ -188,17 +196,58 @@ li {
 	vertical-align: middle;
 }
 
+.history-imgs:hover  {
+	cursor: pointer;
+}
+
 #history-text {
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 #history-text li {
 	font-size: 0.9em;
-	vertical-align: top;
 	display: inline-block;
-	text-align: justify;
-	width: 150px;
-	margin-right: 27px;
+	text-align: center;
+	width: 160px;
+	line-height: 1.6em;
+}
+
+.history-title {
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+}
+
+.not-right-img {
+	margin-right: 6px;
+}
+
+.not-right-text {
+	margin-right: 30px;
+}
+
+#cutcard-lefttop {
+	margin-left: -35px;
+	margin-top: -35px;
+	float: left;
+}
+
+#cutcard-righttop {
+	margin-right: -35px;
+	margin-top: -35px;
+	float: right;
+}
+
+#cutcard-leftbottom {
+	margin-left: -35px;
+	margin-bottom: -35px;
+	float: left;
+}
+
+#cutcard-rightbottom {
+	margin-right: -35px;
+	margin-bottom: -35px;
+	float: right;
 }
 
 .workbox {
@@ -208,14 +257,15 @@ li {
 	text-align: center;
 	width: 900px;
 	height: 580px;
-	margin-bottom: 80px;
-	background-color: #eeeeee;
-	background-image:url('../img/stripe.png');
+	margin-bottom: 110px;
+	background-color: #f3f3f3;
+	background-image:url('../img/papertexture_light.png');
 }
 
 #button-right {
+	margin-right: 70px;
 	float: right;
-	margin-top: 270px;
+	margin-top: 30px;
 }
 
 #button-right:hover {
@@ -224,8 +274,9 @@ li {
 }
 
 #button-left {
+	margin-left: 70px;
 	float: left;
-	margin-top: 270px;
+	margin-top: 30px;
 }
 
 #button-left:hover {
@@ -244,17 +295,17 @@ li {
 }
 
 .workbox-caption {
+	font-size: 1em;
 	margin-top: 5px;
 	text-align: center;
 }
 
 .workbox-description {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 25px;
+	margin-right: 25px;
 	margin-top: 10px;
 	font-size: 0.9em;
-	text-align: justify;
-	width: 720px;
+	text-align: center;
 }
 
 #haagen1 {
@@ -350,6 +401,7 @@ li {
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: 1px #666666 solid;
+    font-size: 1em;
 	background-image:url('../img/fabric_brown.png');
 }
 

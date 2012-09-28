@@ -25,25 +25,25 @@
 
     <div id="about">
       <div class="nav-about arrow"><a id="about-link" name="about" href="#about">About</a></div>
-      <div class="arrow-caption">Take a look at my history.</div>
+      <div class="arrow-caption">Take a look at the key moments in my journey.</div>
       <div id="history">
         <ul>
-          <li><img src="img/computer.png"></li>
-          <span class="curly">▸</span>
-          <li><img src="img/computer.png"></li>
-          <span class="curly">▸</span>
-          <li><img src="img/computer.png"></li>
-          <span class="curly">▸</span>
-          <li><img src="img/computer.png"></li>
-          <span class="curly">▸</span>
-          <li><img src="img/computer.png"></li>
+          <li class="not-right-img"><img class="history-imgs" id="history-img1" src="img/computer.png"></li>
+          <li class="not-right-img"><img src="img/arrow_rightsmall.png"></li>
+          <li class="not-right-img"><img class="history-imgs" id="history-img2" src="img/computer.png"></li>
+          <li class="not-right-img"><img src="img/arrow_rightsmall.png"></li>
+          <li class="not-right-img"><img class="history-imgs" id="history-img3" src="img/computer.png"></li>
+          <li class="not-right-img"><img src="img/arrow_rightsmall.png"></li>
+          <li class="not-right-img"><img class="history-imgs" id="history-img4" src="img/computer.png"></li>
+          <li class="not-right-img"><img src="img/arrow_rightsmall.png"></li>
+          <li><img class="history-imgs" id="history-img5" src="img/computer.png"></li>
         </ul>
         <ul id="history-text">
-          <li>I began with a BA in Information Science at Cornell University. I learned Java, HTML, PHP, and CSS.</li>
-          <li>I added a BFA in Art. I learned illustration, painting, and video editing.</li>
-          <li>I worked at Transistor Studios doing Flash developing, creating video micro-sites and rich media ads.</li>
-          <li>I got a MFA in Computer Art from the School of Visual Arts. I learned UI Design and Visual Design.</li>
-          <li>I worked at Google as part of the DoubleClick rich media department. I worked as a rich media ad developer.</li>
+          <li class="not-right-text"><span class="history-title">BA Information Science</span><br>Cornell University</li>
+          <li class="not-right-text"><span class="history-title">BFA Art</span><br>Cornell University</li>
+          <li class="not-right-text"><span class="history-title">Flash Developer</span><br>Transistor Studios</li>
+          <li class="not-right-text"><span class="history-title">MFA Computer Art</span><br>School of Visual Arts</li>
+          <li><span class="history-title">Rich Media Developer</span><br>Google</li>
        </ul>
     </div><!-- history -->
       <!--<img id="chart" src="img/chart.png"></div>-->
@@ -51,17 +51,21 @@
 
     <div id="work">
       <div class="arrow"><a id="work-link" name="work" href="#work">Work</a></div>
-      <div class="arrow-caption">Take a look at my work.</div>
+      <div class="arrow-caption">Here are some selections of my projects over the years.</div>
 
       <div id="projects" class="workbox border-standard">
-        <p id="button-right" class="button curly">▶</p>
-        <p id="button-left" class="button curly">◀</p>
+        <div id="cutcard-lefttop"><img src="img/cutcard_lefttop.png"></div>
+        <div id="cutcard-righttop"><img src="img/cutcard_righttop.png"></div>
+        <div id="cutcard-leftbottom"><img src="img/cutcard_leftbottom.png"></div>
+        <div id="cutcard-rightbottom"><img src="img/cutcard_rightbottom.png"></div>
+        <div id="button-right" class="button"><img src="img/arrow_right.png"></div>
+        <div id="button-left" class="button"><img src="img/arrow_left.png"></div>
 
         <div id="project0">
           <p class="workbox-title">Essential Fives</p>
           <p class="workbox-caption"><span class="emphasis">with</span> Transistor Studios / Häagen-Dazs</p>
           <p class="workbox-description">
-            These Häagen-Dazs units were developed as part of the larger <a href="http://soapbox5.com/timecapsule.php" target="_blank">E5 campaign</a>, encouraging users to write down their top five items in a five-year time capsule to promote the new <a href="http://www.haagendazs.com/products/five.aspx" target="_blank">Häagen-Dazs Five</a> ice cream. I worked as the lead animator and developer on these ads at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. The animations were created using <a href="http://www.greensock.com/tweenlite/" target="_blank">TweenLite</a>, and the units were trafficked through <a href="http://www.pointroll.com/" target="_blank">PointRoll</a>.
+            These Häagen-Dazs units were developed as part of the larger <a href="http://soapbox5.com/timecapsule.php" target="_blank">E5 campaign</a>, encouraging users to write down their top five items in a five-year time capsule to promote the new <a href="http://www.haagendazs.com/products/five.aspx" target="_blank">Häagen-Dazs Five</a> ice cream. I worked as the lead animator and developer on these ads at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. The animations are entirely code-based, and the units were trafficked through <a href="http://www.pointroll.com/" target="_blank">PointRoll</a>.
           </p>
           <div id="haagen1"></div>
           <div id="haagen2"></div>
@@ -132,6 +136,7 @@
         </div> -->
 
       </div> <!--projects-->
+
     </div> <!--work-->
 
     <div id="contact">
@@ -156,6 +161,8 @@
     </div>
 
     <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.22.custom.js"></script>
     <script type="text/javascript" src="js/portfolio.js"></script>
 
     <div id="footer">
