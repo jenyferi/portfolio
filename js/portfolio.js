@@ -11,7 +11,7 @@ $(document).ready(function () {
 	}
 
 	//project swap and fade logic
-	var numProjects = 7;
+	var numProjects = 9;
 	var currProject = 0;
 	var fadeTime = 400;
 
@@ -50,29 +50,30 @@ $(document).ready(function () {
 
 	//history logo hovers 
 	$("#history-img1").hover(
-          function(){this.src = this.src.replace("img/computer.png","img/history1.png");},
-          function(){this.src = this.src.replace("img/history1.png","img/computer.png");
+          function(){this.src = this.src.replace("img/cornell.png","img/history1.png");},
+          function(){this.src = this.src.replace("img/history1.png","img/cornell.png");
      });
 	
 	$("#history-img2").hover(
-          function(){this.src = this.src.replace("img/computer.png","img/history2.png");},
-          function(){this.src = this.src.replace("img/history2.png","img/computer.png");
+          function(){this.src = this.src.replace("img/cornell.png","img/history2.png");},
+          function(){this.src = this.src.replace("img/history2.png","img/cornell.png");
      });
 	
 	$("#history-img3").hover(
-          function(){this.src = this.src.replace("img/computer.png","img/history3.png");},
-          function(){this.src = this.src.replace("img/history3.png","img/computer.png");
+          function(){this.src = this.src.replace("img/transistor.png","img/history3.png");},
+          function(){this.src = this.src.replace("img/history3.png","img/transistor.png");
      });
 	
 	$("#history-img4").hover(
-          function(){this.src = this.src.replace("img/computer.png","img/history4.png");},
-          function(){this.src = this.src.replace("img/history4.png","img/computer.png");
+          function(){this.src = this.src.replace("img/sva.png","img/history4.png");},
+          function(){this.src = this.src.replace("img/history4.png","img/sva.png");
      });
 
 	$("#history-img5").hover(
-          function(){this.src = this.src.replace("img/computer.png","img/history5.png");},
-          function(){this.src = this.src.replace("img/history5.png","img/computer.png");
+          function(){this.src = this.src.replace("img/google.png","img/history5.png");},
+          function(){this.src = this.src.replace("img/history5.png","img/google.png");
      });
+	////////////////////////////////////////////////////////////////////////////////////////
 
 	//link logo hovers
 	 $("#pinterest-img").hover(
