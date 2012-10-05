@@ -10,6 +10,14 @@ $(document).ready(function () {
 		$("#intro-top").css("text-shadow", "0.005em 0.02em 0.04em #666666");
 	}
 
+	//logo 
+	$("#ba").fadeOut(0);
+
+	$("#logo").hover(
+		function(){ $("#ba").fadeIn(); },
+		function(){ $("#ba").fadeOut(); }
+	);
+
 	//project swap and fade logic
 	var numProjects = 12;
 	var currProject = 0;
@@ -39,15 +47,17 @@ $(document).ready(function () {
 
 		  		$("#project" + currProject).fadeIn(fadeTime);
 
-		  		if (currProject == 11) { //11 = sears
+		  		$("#numbers").html("" + (currProject+1) + " / " + numProjects);
+
+		  		if (currProject == 3) {
 		  			projectImages("sears", 9);
-		  		}else if (currProject == 10){ //10 = kayak
+		  		}else if (currProject == 8){
 		  			projectImages("kayak", 6);
-		  		}else if (currProject == 9){ //9 = android
+		  		}else if (currProject == 5){
 		  			projectImages("android", 6);
-		  		}else if (currProject == 8){ //8 = phillips
+		  		}else if (currProject == 1){ 
 		  			projectImages("phillips", 4);
-		  		}else if (currProject == 7){ //7 = freise
+		  		}else if (currProject == 7){ 
 		  			projectImages("freise", 4);
 		  		}
   			}
@@ -135,26 +145,38 @@ $(document).ready(function () {
 	}
 	////////////////////////////////////////////////////////////////////////////////////////
 
+
+	// arrow hovers 
+	$("#button-right-img").hover(
+		function(){this.src = this.src.replace("img/arrow_right.png","img/arrow_right_hover.png");},
+		function(){this.src = this.src.replace("img/arrow_right_hover.png","img/arrow_right.png");
+    });
+
+    $("#button-left-img").hover(
+		function(){this.src = this.src.replace("img/arrow_left.png","img/arrow_left_hover.png");},
+		function(){this.src = this.src.replace("img/arrow_left_hover.png","img/arrow_left.png");
+    });
+
 	//link logo hovers
-	 $("#pinterest-img").hover(
-          function(){this.src = this.src.replace("img/pinterest.png","img/pinterest_hover.png");},
-          function(){this.src = this.src.replace("img/pinterest_hover.png","img/pinterest.png");
-     });
+	$("#pinterest-img").hover(
+		function(){this.src = this.src.replace("img/pinterest.png","img/pinterest_hover.png");},
+		function(){this.src = this.src.replace("img/pinterest_hover.png","img/pinterest.png");
+	});
 
-	 $("#linkedin-img").hover(
-          function(){this.src = this.src.replace("img/linkedin.png","img/linkedin_hover.png");},
-          function(){this.src = this.src.replace("img/linkedin_hover.png","img/linkedin.png");
-     });
+	$("#linkedin-img").hover(
+		function(){this.src = this.src.replace("img/linkedin.png","img/linkedin_hover.png");},
+		function(){this.src = this.src.replace("img/linkedin_hover.png","img/linkedin.png");
+	});
 
-	 $("#email-img").hover(
-          function(){this.src = this.src.replace("img/email.png","img/email_hover.png");},
-          function(){this.src = this.src.replace("img/email_hover.png","img/email.png");
-     });
+	$("#email-img").hover(
+		function(){this.src = this.src.replace("img/email.png","img/email_hover.png");},
+		function(){this.src = this.src.replace("img/email_hover.png","img/email.png");
+	});
 
-	 $("#resume-img").hover(
-          function(){this.src = this.src.replace("img/resume.png","img/resume_hover.png");},
-          function(){this.src = this.src.replace("img/resume_hover.png","img/resume.png");
-     });
+	$("#resume-img").hover(
+		function(){this.src = this.src.replace("img/resume.png","img/resume_hover.png");},
+		function(){this.src = this.src.replace("img/resume_hover.png","img/resume.png");
+	});
 
 	swfobject.embedSWF("http://jennylin.s3.amazonaws.com/portfolio/images/projects/haagen/haagen_five.swf", "haagen1", "300", "250", "9.0.0", "js/expressInstall.swf");
 	swfobject.embedSWF("http://jennylin.s3.amazonaws.com/portfolio/images/projects/haagen/haagen_five2.swf", "haagen2", "720", "90", "9.0.0", "js/expressInstall.swf");
