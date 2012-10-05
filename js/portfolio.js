@@ -14,8 +14,8 @@ $(document).ready(function () {
 	$("#ba").fadeOut(0);
 
 	$("#logo").hover(
-		function(){ $("#ba").fadeIn(); },
-		function(){ $("#ba").fadeOut(); }
+		function(){ $("#ba").fadeIn(200); },
+		function(){ $("#ba").fadeOut(200); }
 	);
 
 	//project swap and fade logic
@@ -159,8 +159,8 @@ $(document).ready(function () {
 
 	//link logo hovers
 	$("#pinterest-img").hover(
-		function(){this.src = this.src.replace("img/pinterest.png","img/pinterest_hover.png");},
-		function(){this.src = this.src.replace("img/pinterest_hover.png","img/pinterest.png");
+		function(){this.src = this.src.replace("img/github.png","img/github_hover.png");},
+		function(){this.src = this.src.replace("img/github_hover.png","img/github.png");
 	});
 
 	$("#linkedin-img").hover(
@@ -169,13 +169,13 @@ $(document).ready(function () {
 	});
 
 	$("#email-img").hover(
-		function(){this.src = this.src.replace("img/email.png","img/email_hover.png");},
-		function(){this.src = this.src.replace("img/email_hover.png","img/email.png");
+		function(){this.src = this.src.replace("img/email_circle.png","img/email_circle_hover.png");},
+		function(){this.src = this.src.replace("img/email_circle_hover.png","img/email_circle.png");
 	});
 
 	$("#resume-img").hover(
-		function(){this.src = this.src.replace("img/resume.png","img/resume_hover.png");},
-		function(){this.src = this.src.replace("img/resume_hover.png","img/resume.png");
+		function(){this.src = this.src.replace("img/resume_circle.png","img/resume_circle_hover.png");},
+		function(){this.src = this.src.replace("img/resume_circle_hover.png","img/resume_circle.png");
 	});
 
 	swfobject.embedSWF("http://jennylin.s3.amazonaws.com/portfolio/images/projects/haagen/haagen_five.swf", "haagen1", "300", "250", "9.0.0", "js/expressInstall.swf");

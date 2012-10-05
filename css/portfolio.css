@@ -8,6 +8,14 @@ body {
 	padding: 0px;
 }
 
+text {
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 0.7em;
+	color: #000000;
+}
+
 ::selection {
 	background: #A5D1D0; /* Safari */
 }
@@ -124,6 +132,10 @@ li {
 	font-size: 1em;
 }
 
+#ba:hover {
+	cursor: pointer;
+}
+
 #intro-top {
 	margin-top: 130px;
 	color: #636363;
@@ -233,26 +245,26 @@ li {
 }
 
 #cutcard-lefttop {
-	margin-left: -35px;
-	margin-top: -35px;
+	margin-left: -40px;
+	margin-top: -40px;
 	float: left;
 }
 
 #cutcard-righttop {
-	margin-right: -35px;
-	margin-top: -35px;
+	margin-right: -40px;
+	margin-top: -40px;
 	float: right;
 }
 
 #cutcard-leftbottom {
-	margin-left: -35px;
-	margin-top: -65px;
+	margin-left: -40px;
+	margin-top: -50px;
 	float: left;
 }
 
 #cutcard-rightbottom {
-	margin-right: -35px;
-	margin-top: -65px;
+	margin-right: -40px;
+	margin-top: -50px;
 	float: right;
 }
 
@@ -442,7 +454,7 @@ li {
 }
 
 #pinterest-caption {
-	margin-left: 12px;
+	margin-left: 18px;
 }
 
 #footer {
