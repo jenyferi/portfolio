@@ -94,14 +94,29 @@ $(document).ready(function () {
 		}
 
 		var k = 0;
-		var changeTime = fadeTime*7;
+		var changeTime = fadeTime*10;
 		var delayTime = fadeTime*3;
 		var timesrun = 0;
+		var shouldFlip = true;
 
 		var interval = setInterval(
 			function fadeImage(){
-				$("#" + projectName + k).fadeOut(fadeTime, fadeNext());
-				timesrun++;
+				/*$("#" + projectName + k).hover(
+					function(){
+						console.log("hover over");
+						shouldFlip = false;
+					},
+					function(){
+						console.log("hover off");
+						shouldFlip = true;
+					}
+				);*/
+
+				if (shouldFlip){
+					$("#" + projectName + k).fadeOut(fadeTime, fadeNext());
+					timesrun++;
+				}
+
 				if (timesrun >= 2*numImages) {
 					clearInterval(interval);
 				}
