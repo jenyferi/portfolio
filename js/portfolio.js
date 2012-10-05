@@ -88,28 +88,35 @@ $(document).ready(function () {
 	////////////////////////////////////////////////////////////////////////////////////////
 
 	//projects
-	function projectImages(numProject, numImages){
-
+	function projectImages(projectName, numImages){
 		for (var i=1; i<numImages; i++){
-			$("#" + numProject + i).fadeOut(0); //fade out all except first
+			$("#" + projectName + i).fadeOut(0); //fade out all except first
 		}
 
-		/*
-		var k=0;
+		var k = 0;
+		var changeTime = fadeTime*7;
+		var delayTime = fadeTime*3;
+		var timesrun = 0;
 
-		do {
-	  		$("#sears" + k).fadeOut(fadeTime, 
-	  			function(){
-			  		k++;
+		var interval = setInterval(
+			function fadeImage(){
+				$("#" + projectName + k).fadeOut(fadeTime, fadeNext());
+				timesrun++;
+				if (timesrun >= 2*numImages) {
+					clearInterval(interval);
+				}
+			}, changeTime
+		);
 
-					if (k == num_sears){
-						k = 0;
-					}
+		function fadeNext(){
+			if (k==numImages-1){
+				k=0;	
+			}else {
+				k++;
+			}
 
-			  		$("#sears" + k).fadeIn(fadeTime);
-	  			}
-	  		);
-  		} while (k<num_sears);*/
+			$("#" + projectName + k).delay(delayTime).fadeIn(fadeTime);
+		}
 	}
 	////////////////////////////////////////////////////////////////////////////////////////
 

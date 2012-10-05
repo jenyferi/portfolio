@@ -351,10 +351,11 @@ li {
 
 #kayak-imgs {
 	margin-top: 5px;
+	vertical-align: middle;
 }
 
 #android-imgs {
-	margin-top: 80px;
+	margin-top: 5px;
 }
 
 #phillips-imgs {
