@@ -48,7 +48,7 @@ li {
 .curly {
 	color: #e98a9f;
 	font-family: 'Cookie', cursive;
-	font-size: 2.0em;
+	font-size: 2.1em;
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -120,7 +120,7 @@ li {
 #intro-top {
 	margin-top: 130px;
 	color: #636363;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
@@ -132,7 +132,7 @@ li {
 #intro-second {
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 95px;
+	margin-bottom: 130px;
 	font-size: 1.5em;
 	line-height: 1.4em;
 }
@@ -161,12 +161,13 @@ li {
 }
 
 .arrow-caption {
-	width: 400px;
+	width: 450px;
 	font-size: 1.3em;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5px;
+	margin-bottom: 15px;
 }
 
 .line{
@@ -184,20 +185,16 @@ li {
 }
 
 #history {
-	width: 932px;
+	width: 974px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
-	margin-bottom: 110px;
+	margin-bottom: 130px;
 }
 
 #history li {
 	display: inline-block;
 	vertical-align: middle;
-}
-
-.history-imgs:hover  {
-	cursor: pointer;
 }
 
 #history-text {
@@ -208,8 +205,9 @@ li {
 	font-size: 0.9em;
 	display: inline-block;
 	text-align: center;
-	width: 160px;
+	width: 164px;
 	line-height: 1.6em;
+	vertical-align: top;
 }
 
 .history-title {
@@ -220,11 +218,11 @@ li {
 }
 
 .not-right-img {
-	margin-right: 6px;
+	margin-right: 11px;
 }
 
 .not-right-text {
-	margin-right: 30px;
+	margin-right: 35px;
 }
 
 #cutcard-lefttop {
@@ -258,7 +256,7 @@ li {
 	text-align: center;
 	width: 900px;
 	height: 580px;
-	margin-bottom: 110px;
+	margin-bottom: 130px;
 	background-color: #f3f3f3;
 	background-image:url('../img/papertexture_light.png');
 }
@@ -309,6 +307,10 @@ li {
 	text-align: center;
 }
 
+.project {
+	height: 520px;
+}
+
 #haagen1 {
 	margin-top: 25px;
 	margin-bottom: 10px;
@@ -340,6 +342,26 @@ li {
 }
 
 #rmgallery1 {
+	margin-top: 5px;
+}
+
+#sears-imgs {
+	margin-top: 50px;
+}
+
+#kayak-imgs {
+	margin-top: 5px;
+}
+
+#android-imgs {
+	margin-top: 80px;
+}
+
+#phillips-imgs {
+	margin-top: 5px;
+}
+
+#freise-imgs {
 	margin-top: 5px;
 }
 

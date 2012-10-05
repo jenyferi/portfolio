@@ -11,12 +11,12 @@ $(document).ready(function () {
 	}
 
 	//project swap and fade logic
-	var numProjects = 9;
+	var numProjects = 12;
 	var currProject = 0;
 	var fadeTime = 400;
 
 	for (var i=1; i<numProjects; i++){
-		$("#project" + i).fadeOut(0);
+		$("#project" + i).fadeOut(0); //fade out all except first
 	}
 
 	$(".button").click(function() {
@@ -38,6 +38,18 @@ $(document).ready(function () {
 				}
 
 		  		$("#project" + currProject).fadeIn(fadeTime);
+
+		  		if (currProject == 11) { //11 = sears
+		  			projectImages("sears", 9);
+		  		}else if (currProject == 10){ //10 = kayak
+		  			projectImages("kayak", 6);
+		  		}else if (currProject == 9){ //9 = android
+		  			projectImages("android", 6);
+		  		}else if (currProject == 8){ //8 = phillips
+		  			projectImages("phillips", 4);
+		  		}else if (currProject == 7){ //7 = freise
+		  			projectImages("freise", 4);
+		  		}
   			}
   		);
 	});
@@ -49,7 +61,7 @@ $(document).ready(function () {
     $("#button-left").effect("bounce", { direction:'right', times:5 }, 200);*/
 
 	//history logo hovers 
-	$("#history-img1").hover(
+	/*$("#history-img1").hover(
           function(){this.src = this.src.replace("img/cornell.png","img/history1.png");},
           function(){this.src = this.src.replace("img/history1.png","img/cornell.png");
      });
@@ -72,7 +84,33 @@ $(document).ready(function () {
 	$("#history-img5").hover(
           function(){this.src = this.src.replace("img/google.png","img/history5.png");},
           function(){this.src = this.src.replace("img/history5.png","img/google.png");
-     });
+     });*/
+	////////////////////////////////////////////////////////////////////////////////////////
+
+	//projects
+	function projectImages(numProject, numImages){
+
+		for (var i=1; i<numImages; i++){
+			$("#" + numProject + i).fadeOut(0); //fade out all except first
+		}
+
+		/*
+		var k=0;
+
+		do {
+	  		$("#sears" + k).fadeOut(fadeTime, 
+	  			function(){
+			  		k++;
+
+					if (k == num_sears){
+						k = 0;
+					}
+
+			  		$("#sears" + k).fadeIn(fadeTime);
+	  			}
+	  		);
+  		} while (k<num_sears);*/
+	}
 	////////////////////////////////////////////////////////////////////////////////////////
 
 	//link logo hovers
