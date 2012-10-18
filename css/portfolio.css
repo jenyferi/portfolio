@@ -1,27 +1,27 @@
 body {
 	font-family: 'Vollkorn', serif;
+	font-weight: 400;
 	background-image:url('../img/papertexture.png');
 	background-repeat: repeat;
 	color: #555555;
 	background-color: #eaeaea;
 	margin: 0px;
 	padding: 0px;
+	text-align: center;
+	height: 100%;
 }
 
 text {
-	text-transform: uppercase;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
+	color: #ffffff !important;
 	font-size: 0.7em;
-	color: #000000;
 }
 
 ::selection {
-	background: #A5D1D0; /* Safari */
+	background: #A5D1D0; 
 }
 
 ::-moz-selection {
-	background: #A5D1D0; /* Firefox */
+	background: #A5D1D0; 
 }
 
 p {
@@ -62,11 +62,9 @@ li {
 }
 
 .emphasis {
-	color: #9ec0bc;
-	font-family: 'Cookie', cursive;
-	font-size: 1.5em;
+	font-size: 0.9em;
 	margin-left: 5px;
-	margin-right: 5px;
+	margin-right: 3px;
 	text-transform: lowercase;
 }
 
@@ -95,14 +93,16 @@ li {
 
 #navbar li {
 	display: inline;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 27px;
+	margin-right: 13px;
 }
 
 #navbar a {
 	vertical-align: top;
 	display: inline-block;
 	color: #ffffff;
+	zoom: 1;
+	*display: inline;
 }
 
 #navbar a:visited {
@@ -119,15 +119,29 @@ li {
 
 #logo {
 	width: 123px;
-	height: 127px;
-	padding-top: 15px;
-	padding-left: 2px;
+	height: 143px;
 	background-image:url('../img/logo_bg.png');
+	position: absolute;
+	left: 50%;
+	margin-left: -62px;
+}
+
+#logo-img {
+	margin-top: 15px;
+	width: 94px;
+	height: 74px;
+	border: none;
+}
+
+#logospace {
+	padding-left: 61px;
+	padding-right: 62px;
 }
 
 #ba {
 	position: absolute;
-	margin-left: 51.2%;
+	left: 50%;
+	margin-left: 25px;
 	margin-top: 10px;
 	font-size: 1em;
 }
@@ -146,12 +160,13 @@ li {
 	font-size: 4.1em;
 	text-transform: uppercase;
 	text-shadow: 0.02em 0.04em 0.04em #888888;
+	*text-shadow: 0;
 }
 
 #intro-second {
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 130px;
+	margin-bottom: 120px;
 	font-size: 1.5em;
 	line-height: 1.4em;
 }
@@ -187,6 +202,7 @@ li {
 	margin-right: auto;
 	margin-top: 5px;
 	margin-bottom: 15px;
+	*margin-top: 20px;
 }
 
 .line{
@@ -214,6 +230,8 @@ li {
 #history li {
 	display: inline-block;
 	vertical-align: middle;
+	zoom: 1;
+	*display: inline;
 }
 
 #history-text {
@@ -227,6 +245,8 @@ li {
 	width: 164px;
 	line-height: 1.6em;
 	vertical-align: top;
+	zoom: 1;
+	*display: inline;
 }
 
 .history-title {
@@ -245,27 +265,39 @@ li {
 }
 
 #cutcard-lefttop {
+	*display: none;
 	margin-left: -40px;
 	margin-top: -40px;
 	float: left;
+	width: 135px;
+	height: 135px;
 }
 
 #cutcard-righttop {
+	*display: none;
 	margin-right: -40px;
 	margin-top: -40px;
 	float: right;
+	width: 135px;
+	height: 135px;
 }
 
 #cutcard-leftbottom {
+	*display: none;
 	margin-left: -40px;
 	margin-top: -50px;
 	float: left;
+	width: 135px;
+	height: 135px;
 }
 
 #cutcard-rightbottom {
+	*display: none;
 	margin-right: -40px;
 	margin-top: -50px;
 	float: right;
+	width: 135px;
+	height: 135px;
 }
 
 #numbers {
@@ -318,6 +350,7 @@ li {
 	text-align: center;
 	text-transform: uppercase;
 	text-shadow: 0.04em 0.04em 0.03em #888888;
+	*text-shadow: 0;
 }
 
 .workbox-caption {
@@ -327,11 +360,12 @@ li {
 }
 
 .workbox-description {
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 110px;
+	margin-right: 110px;
 	margin-top: 10px;
 	font-size: 0.9em;
-	text-align: center;
+	text-align: left;
+	padding: 0px;
 }
 
 .project {
@@ -372,8 +406,16 @@ li {
 	margin-top: 5px;
 }
 
+.projectimg {
+	position: absolute;
+}
+
 #sears-imgs {
 	margin-top: 50px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
 }
 
 #kayak-imgs {
@@ -383,21 +425,40 @@ li {
 
 #android-imgs {
 	margin-top: 5px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 780px;
 }
 
 #phillips-imgs {
 	margin-top: 5px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 688px;
 }
 
 #freise-imgs {
 	margin-top: 5px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 573px;
 }
 
-#writing {
+#writing {	
 	width: 150px;
-	margin-left: 60%;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	margin-left: 125px;
 	margin-top: -140px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
 	line-height: 1.3em;
+	text-align: left;
 }
 
 #me {
@@ -405,6 +466,8 @@ li {
 	margin-top: 25px;
 	margin-left: auto;
 	margin-right: auto;
+	width: 190px;
+	height: 190px;
 }
 
 #email-title {
@@ -414,11 +477,17 @@ li {
 	text-transform: uppercase;
 }
 
+.link-imgs {
+	border: none;
+	width: 37px;
+	height: 37px;
+}
+
 #contact-images {
 	clear: both;
 	text-align: center;
 	padding: 0px;
-	margin-top: 120px;
+	margin-top: 25px;
 }
 
 #contact-images li {
@@ -426,14 +495,16 @@ li {
 	vertical-align: middle;
 	margin-right: 15px;
 	margin-left: 15px;
+	zoom: 1;
+	*display: inline;
 }
 
 #link-captions {
 	margin-left: auto;
 	margin-right: auto;
 	width: 295px;
-	padding: 0px;
 	margin-top: 5px;
+	text-align: left;
 }
 
 #link-captions li {
@@ -442,19 +513,23 @@ li {
 }
 
 #email-caption {
-	margin-left: 28px;
+	margin-left: 25px;
+	*margin-left: 10px;
 }
 
 #resume-caption {
-	margin-left: 20px;
+	margin-left: 24px;
+	*margin-left: 22px;
 }
 
 #linkedin-caption {
 	margin-left: 15px;
+	*margin-left: 11px;
 }
 
 #pinterest-caption {
 	margin-left: 18px;
+	*margin-left: 12px;
 }
 
 #footer {

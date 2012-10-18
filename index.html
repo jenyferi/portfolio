@@ -2,19 +2,34 @@
   <head>
     <meta charset="utf-8"> 
     <title>Jenny Lin</title>
+
+    <link rel="shortcut icon" href="http://jennylin.s3.amazonaws.com/new/favicon.png" />
+
     <link href="css/portfolio.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise' rel='stylesheet' type='text/css'>
+
+    <!--[if IE]>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn:700' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
     <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/portfolio.js"></script>
+
   </head>
   <body>
     <div id="navbar">
+      <a id="logo" href=""><img id="logo-img" src="img/sheep.png" alt=""></a>
       <ul>
         <li><a class="nav-about nav-element" href="#about">About</a></li>
         <li><a class="nav-element" href="#work">Work</a></li>
-        <li><a id="logo" href=""><img src="img/sheep.png" alt=""></a></li>
+        <li id="logospace"></li>
         <li><a class="nav-element" href="#contact">Contact</a></li>
         <li><a class="nav-element" href="http://paper-fish.tumblr.com" target="_blank">Blog</a></li>
       </ul>
@@ -31,13 +46,13 @@
       <div id="history">
         <ul>
           <li class="not-right-img"><img class="history-imgs" id="history-img1" src="img/cornell.png"></li>
-          <li class="not-right-img"><img src="img/arrow_rightsmall.png"></li>
+          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png"></li>
           <li class="not-right-img"><img class="history-imgs" id="history-img1" src="img/peachpit.png"></li>
-          <li class="not-right-img"><img src="img/arrow_rightsmall.png"></li>
+          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png"></li>
           <li class="not-right-img"><img class="history-imgs" id="history-img4" src="img/sva.png"></li>
-          <li class="not-right-img"><img src="img/arrow_rightsmall.png"></li>
+          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png"></li>
           <li class="not-right-img"><img class="history-imgs" id="history-img3" src="img/transistor.png"></li>
-          <li class="not-right-img"><img src="img/arrow_rightsmall.png"></li>
+          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png"></li>
           <li><img class="history-imgs" id="history-img5" src="img/google.png"></li>
         </ul>
         <ul id="history-text">
@@ -64,58 +79,51 @@
         <div id="numbers">1 / 12</div>
 
         <div id="project0" class="project">
-          <p class="workbox-title">Quaker Experience</p>
-          <p class="workbox-caption"><span class="emphasis">with</span> Transistor Studios / Quaker Oatmeal</p>
-          <p class="workbox-description">
-            These Quaker Oatmeal ads were developed as part of a larger campaign encouraging users to experiment with various <a href="http://www.quakeroats.com/cooking-and-recipes/content/quaker-instant-oats.aspx" target="_blank">Oatmeal Topping Ideas</a>. I worked as the lead Flash animator and developer on these units at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. I worked closely with the 3D modeling artists, compositors, and art director on the concept and development. The ads were trafficked through <a href="http://www.eyewonder.com/" target="_blank">EyeWonder</a>. 
-          </p>
-          <div id="quaker1"></div>
-          <div id="quaker2"></div>
-        </div> <!--project0-->
-
-        <div id="project1" class="project">
           <p class="workbox-title">Eric J. Phillips Law</p>
           <p class="workbox-caption"><span class="emphasis">with</span> The Law Office of Eric J. Phillips</p>
           <p class="workbox-description">
             I worked with Eric and Nancy Phillips to design and develop this website and logo to showcase the independent practice of The Law Office of Eric J. Phillips.
           </p>
-          <div id="phillips-imgs">
-            <div id="phillips0"><img src="img/projects/phillips0.png"></div>
-            <div id="phillips1"><img src="img/projects/phillips1.png"></div>
-            <div id="phillips2"><img src="img/projects/phillips2.png"></div>
-            <div id="phillips3"><img src="img/projects/phillips3.png"></div>
-          </div>
-        </div> <!--project1-->
+          <div id="phillips-imgs"></div>
+        </div> <!--project0-->
 
-        <div id="project2" class="project">
+        <div id="project1" class="project">
           <p class="workbox-title">Castle</p>
           <p class="workbox-caption"><span class="emphasis">my</span> Personal Project / School of Visual Arts</p>
           <p class="workbox-description">
             This interactive scene was created as a prototype for the first scene of a point-and-click fairy tale themed game. Interactions include the click and drag clouds, mouseover trees, and mouseover windmills.  
           </p>
           <div id="castle1"></div>
+        </div> <!--project1-->
+
+        <div id="project2" class="project">
+          <p class="workbox-title">Wild Swans</p>
+          <p class="workbox-caption"><span class="emphasis">my</span> MFA Thesis Project / School of Visual Arts</p>
+          <p class="workbox-description">
+            Wild Swans was created as my <a href="http://mfaca.sva.edu/node/326" target="_blank">MFA thesis project in the Computer Art department</a> at the School of Visual Arts. I illustrated and coded this augmented reality project using ActionScript 3, <a href="http://blog.papervision3d.org/" target="_blank">PaperVision3D</a>, and <a href="http://www.libspark.org/wiki/saqoosha/FLARToolKit/en" target="_blank">FLARToolKit</a>. Markers were printed on paper and held up to the camera, telling the  tale of <a href="http://en.wikipedia.org/wiki/The_Wild_Swans" target="_blank">The Wild Swans</a>.
+          </p>
+          <div id="wildswans1"></div>
         </div> <!--project2-->
 
         <div id="project3" class="project">
+          <p class="workbox-title">Android in Space</p>
+          <p class="workbox-caption"><span class="emphasis">with</span> Google / DoubleClick Mobile Rich Media</p>
+          <p class="workbox-description">
+            Android in Space is a HTML5 mobile web display ad. It features the Samsung Nexus S, and is intended to be viewed on an iPad. I developed this unit in collaboration other members of the DoubleClick Rich Media team at Google.
+          </p>
+          <div id="android-imgs"></div>
+        </div> <!--project3-->
+
+        <div id="project4" class="project">
           <p class="workbox-title">Arrive Air Mixer</p>
           <p class="workbox-caption"><span class="emphasis">with</span> Transistor Studios / Sears</p>
           <p class="workbox-description">
             This interactive expanding unit was created as part of the <a href="http://designkitchen.com/arrivelounge/" target="_blank">Sears Arrive Lounge</a> Air Band campaign. The user was able to drag and drop various video and sound clips of each air dancer, and play back the sequence at the end. I worked as the lead developer on this unit at <a href="http://www.transistorstudios.com/" target="_blank">Transistor Studios</a>. I worked closely with the visual designer, video editor, and art director on the ad development. The unit was trafficked through <a href="http://www.pointroll.com/" target="_blank">PointRoll</a>.
           </p>
-          <div id="sears-imgs">
-            <div id="sears0"><img src="img/projects/sears0.png"></div>
-            <div id="sears1"><img src="img/projects/sears1.png"></div>
-            <div id="sears2"><img src="img/projects/sears2.png"></div>
-            <div id="sears3"><img src="img/projects/sears3.png"></div>
-            <div id="sears4"><img src="img/projects/sears4.png"></div>
-            <div id="sears5"><img src="img/projects/sears5.png"></div>
-            <div id="sears6"><img src="img/projects/sears6.png"></div>
-            <div id="sears7"><img src="img/projects/sears7.png"></div>
-            <div id="sears8"><img src="img/projects/sears8.png"></div>
-          </div>
-        </div> <!--project3-->
+          <div id="sears-imgs"></div>
+        </div> <!--project4-->
 
-        <div id="project4" class="project">
+        <div id="project5" class="project">
           <p class="workbox-title">Essential Fives</p>
           <p class="workbox-caption"><span class="emphasis">with</span> Transistor Studios / Häagen-Dazs</p>
           <p class="workbox-description">
@@ -123,45 +131,25 @@
           </p>
           <div id="haagen1"></div>
           <div id="haagen2"></div>
-        </div> <!--project4-->
-
-        <div id="project5" class="project">
-          <p class="workbox-title">Android in Space</p>
-          <p class="workbox-caption"><span class="emphasis">with</span> Google / DoubleClick Mobile Rich Media</p>
-          <p class="workbox-description">
-            <a href="http://studio.doubleclick.net/ajax/externalpreviewiframe?view=1ajax/externalpreviewiframe?view=1&h=rGzX678ER15z4P4XUfRQpQ%3D%3D%0D%0A&id=332169&studioDomain=.net&isHTML5Preview=true&previewUrl=&width=970&height=250" target="_blank">Android in Space</a> is a HTML5 mobile web display ad. It features the Samsung Nexus S, and is intended to be viewed on an iPad. I developed this unit in collaboration other members of the DoubleClick Rich Media team at Google.
-          </p>
-          <div id="android-imgs">
-            <div id="android0"><img src="img/projects/android0.png"></div>
-            <div id="android1"><img src="img/projects/android1.png"></div>
-            <div id="android2"><img src="img/projects/android2.png"></div>
-            <div id="android3"><img src="img/projects/android3.png"></div>
-            <div id="android4"><img src="img/projects/android4.png"></div>
-            <div id="android5"><img src="img/projects/android5.png"></div>
-          </div>
         </div> <!--project5-->
 
         <div id="project6" class="project">
-          <p class="workbox-title">Wild Swans</p>
-          <p class="workbox-caption"><span class="emphasis">my</span> MFA Thesis Project / School of Visual Arts</p>
+          <p class="workbox-title">Quaker Experience</p>
+          <p class="workbox-caption"><span class="emphasis">with</span> Transistor Studios / Quaker Oatmeal</p>
           <p class="workbox-description">
-            Wild Swans was created as my <a href="http://mfaca.sva.edu/node/326" target="_blank">MFA thesis project in the Computer Art department</a> at the School of Visual Arts. I illustrated and developed this augmented reality project using ActionScript 3, <a href="http://blog.papervision3d.org/" target="_blank">PaperVision3D</a>, and <a href="http://www.libspark.org/wiki/saqoosha/FLARToolKit/en" target="_blank">FLARToolKit</a>. In this recording, markers were printed on paper and held up to the camera, telling the fairy tale of <a href="http://en.wikipedia.org/wiki/The_Wild_Swans" target="_blank">The Wild Swans</a>.
+            These Quaker Oatmeal ads were developed as part of a larger campaign encouraging users to experiment with various <a href="http://www.quakeroats.com/cooking-and-recipes/content/quaker-instant-oats.aspx" target="_blank">Oatmeal Topping Ideas</a>. I worked as the lead Flash animator and developer on these units at <a href="http://transistorstudios.com" target="_blank">Transistor Studios</a>. I worked closely with the 3D modeling artists, compositors, and art director on the concept and development. The ads were trafficked through <a href="http://www.eyewonder.com/" target="_blank">EyeWonder</a>. 
           </p>
-          <div id="wildswans1"><iframe src="http://player.vimeo.com/video/35960103?title=0&byline=0&portrait=0&color=d46fab" width="720" height="396" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+          <div id="quaker1"></div>
+          <div id="quaker2"></div>
         </div> <!--project6-->
 
         <div id="project7" class="project">
           <p class="workbox-title">The Machine Stops</p>
           <p class="workbox-caption"><span class="emphasis">with</span> The Freise Brothers</p>
           <p class="workbox-description">
-            <a href="http://www.freisebrothers.com/" target="_blank">FreiseBrothers.com</a> was created as a website to showcase an award-winning 3D animation and live-action short film, The Machine Stops, by the Freise Brothers. I developed the site based on the design by Nathan and Adam Freise.
+            <a href="http://www.freisebrothers.com/" target="_blank">FreiseBrothers.com</a> was created to showcase the award-winning 3D animation and live-action short film "The Machine Stops" by the Freise Brothers. I developed the site based on designs by Nathan and Adam Freise.
           </p>
-          <div id="freise-imgs">
-            <div id="freise0"><img src="img/projects/freise0.png"></div>
-            <div id="freise1"><img src="img/projects/freise1.png"></div>
-            <div id="freise2"><img src="img/projects/freise2.png"></div>
-            <div id="freise3"><img src="img/projects/freise3.png"></div>
-          </div>
+          <div id="freise-imgs"></div>
         </div> <!--project7-->
 
         <div id="project8" class="project">
@@ -170,14 +158,7 @@
           <p class="workbox-description">
             These interactive display ads were developed to visualize RSS feeds from <a href="http://kayak.com" target="_blank">Kayak.com</a>. The units were coded to detect the geographic location of a user, then locate the nearest airport. A list of flights from that airport was then displayed. The units were trafficked through <a href="http://www.google.com/doubleclick/">DoubleClick</a>.
           </p>
-          <div id="kayak-imgs">
-            <div id="kayak0"><img src="img/projects/kayak0.png"></div>
-            <div id="kayak1"><img src="img/projects/kayak1.png"></div>
-            <div id="kayak2"><img src="img/projects/kayak2.png"></div>
-            <div id="kayak3"><img src="img/projects/kayak3.png"></div>
-            <div id="kayak4"><img src="img/projects/kayak4.png"></div>
-            <div id="kayak5"><img src="img/projects/kayak5.png"></div>
-          </div>
+          <div id="kayak-imgs"></div>
         </div> <!--project8-->
 
         <div id="project9" class="project">
@@ -186,7 +167,7 @@
           <p class="workbox-description">
             This motion graphic video was created as a Personal Project to show the effect of life to decay, using a tree as the backdrop. I created four separate drawings, and morphed them together.
           </p>
-          <div id="tree1"><iframe src="http://player.vimeo.com/video/35948137?title=0&byline=0&portrait=0&color=d46fab&autoplay=1&loop=1" width="400" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+          <div id="tree1"></div>
         </div> <!--project9-->
 
         <div id="project10" class="project">
@@ -195,7 +176,7 @@
           <p class="workbox-description">
             This shirt design was a submission for a pirates T-shirt contest. I wanted to capture the playful feeling of children playing pirates, a contrast to the other horror-themed design submissions.
           </p>
-          <div id="pirates1"><img src="img/pirates.png" alt="pirates"></div>
+          <div id="pirates1"></div>
         </div> <!--project10-->
 
         <div id="project11" class="project">
@@ -229,10 +210,10 @@
       <div id="writing" class="handwritten">Get in touch!<p id="email-title">jenyferi@gmail.com</p></div>
 
       <ul id="contact-images">
-        <li><a id="email-link" href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny"><img id="email-img" src="img/email_circle.png"></a></li>
-        <li><a id="resume-link" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank"><img id="resume-img" src="img/resume_circle.png"></a></li>
-        <li><a id="linkedin-link" href="http://www.linkedin.com/in/jennymlin" target="_blank"><img id="linkedin-img" src="img/linkedin.png"></a></li>
-        <li><a id="pinterest-link" href="http://github.com/jenyferi"target="_blank"><img id="pinterest-img" src="img/github.png"></a></li>
+        <li><a id="email-link" href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny"><img class="link-imgs" id="email-img" src="img/email_circle.png"></a></li>
+        <li><a id="resume-link" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank"><img class="link-imgs" id="resume-img" src="img/resume_circle.png"></a></li>
+        <li><a id="linkedin-link" href="http://www.linkedin.com/in/jennymlin" target="_blank"><img class="link-imgs" id="linkedin-img" src="img/linkedin.png"></a></li>
+        <li><a id="pinterest-link" href="http://github.com/jenyferi"target="_blank"><img class="link-imgs" id="pinterest-img" src="img/github.png"></a></li>
       </ul>
 
       <ul id="link-captions">
@@ -243,9 +224,6 @@
       </ul>
 
     </div>
-
-    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
-    <script type="text/javascript" src="js/portfolio.js"></script>
     <!--<script type="text/javascript" src="js/d3.v2.js"></script>
     <script type="text/javascript" src="js/bubble.js"></script>-->
 
