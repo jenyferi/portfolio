@@ -1,6 +1,6 @@
-<html lang="en">
+<!DOCTYPE html>
   <head>
-    <meta charset="utf-8"> 
+    <meta charset="UTF-8">
     <title>Jenny Lin</title>
 
     <link rel="shortcut icon" href="http://jennylin.s3.amazonaws.com/new/favicon.png" />
@@ -25,12 +25,12 @@
   </head>
   <body>
     <div id="navbar">
-      <a id="logo" href=""><img id="logo-img" src="img/sheep.png" alt=""></a>
+      <a id="logo" href=""><img id="logo-img" src="img/sheep.png" alt="logo"></a>
       <ul>
-        <li><a class="nav-about nav-element" href="#about">About</a></li>
-        <li><a class="nav-element" href="#work">Work</a></li>
+        <li><a id="about-nav-link" class="nav-about nav-element">About</a></li>
+        <li><a id="work-nav-link" class="nav-element">Work</a></li>
         <li id="logospace"></li>
-        <li><a class="nav-element" href="#contact">Contact</a></li>
+        <li><a id="contact-nav-link" class="nav-element">Contact</a></li>
         <li><a class="nav-element" href="http://paper-fish.tumblr.com" target="_blank">Blog</a></li>
       </ul>
     </div>
@@ -41,19 +41,19 @@
     <p id="intro-second">a <span class="curly">designer</span> and <span class="curly">web developer</span><br>in San Francisco.</p>
 
     <div id="about">
-      <div class="nav-about arrow"><a id="about-link" name="about" href="#about">About</a></div>
+      <div class="nav-about arrow"><a id="about-link">About</a></div>
       <div class="arrow-caption">These are a few key moments in my journey.</div>
       <div id="history">
         <ul>
-          <li class="not-right-img"><img class="history-imgs" id="history-img1" src="img/cornell.png"></li>
-          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png"></li>
-          <li class="not-right-img"><img class="history-imgs" id="history-img1" src="img/peachpit.png"></li>
-          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png"></li>
-          <li class="not-right-img"><img class="history-imgs" id="history-img4" src="img/sva.png"></li>
-          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png"></li>
-          <li class="not-right-img"><img class="history-imgs" id="history-img3" src="img/transistor.png"></li>
-          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png"></li>
-          <li><img class="history-imgs" id="history-img5" src="img/google.png"></li>
+          <li class="not-right-img"><img class="history-imgs" id="history-img1" src="img/cornell.png" alt="cornell"></li>
+          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png" alt="arrow"></li>
+          <li class="not-right-img"><img class="history-imgs" id="history-img2" src="img/peachpit.png" alt="peachpit"></li>
+          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png" alt="arrow"></li>
+          <li class="not-right-img"><img class="history-imgs" id="history-img4" src="img/sva.png" alt="sva"></li>
+          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png" alt="arrow"></li>
+          <li class="not-right-img"><img class="history-imgs" id="history-img3" src="img/transistor.png" alt="transistor"></li>
+          <li class="not-right-img"><img class="history-arrows" src="img/arrow_rightsmall.png" alt="arrow"></li>
+          <li><img class="history-imgs" id="history-img5" src="img/google.png" alt="google"></li>
         </ul>
         <ul id="history-text">
           <li class="not-right-text"><span class="history-title">BA Information Science / BFA Art</span><br>Cornell University</li>
@@ -68,14 +68,14 @@
     </div><!-- about -->
 
     <div id="work">
-      <div class="arrow"><a id="work-link" name="work" href="#work">Work</a></div>
+      <div class="arrow"><a id="work-link">Work</a></div>
       <div class="arrow-caption">This is a selection of my professional and personal projects.</div>
 
       <div id="projects" class="workbox border-standard">
-        <div id="cutcard-lefttop"><img src="img/cutcard_lefttop.png"></div>
-        <div id="cutcard-righttop"><img src="img/cutcard_righttop.png"></div>
-        <div id="button-right" class="button"><img id="button-right-img" src="img/arrow_right.png"></div>
-        <div id="button-left" class="button"><img id="button-left-img" src="img/arrow_left.png"></div>
+        <div id="cutcard-lefttop"><img src="img/cutcard_lefttop.png" alt="corner"></div>
+        <div id="cutcard-righttop"><img src="img/cutcard_righttop.png" alt="corner"></div>
+        <div id="button-right" class="button"><img id="button-right-img" src="img/arrow_right.png" alt="right button"></div>
+        <div id="button-left" class="button"><img id="button-left-img" src="img/arrow_left.png" alt="left button"></div>
         <div id="numbers">1 / 12</div>
 
         <div id="project0" class="project">
@@ -197,30 +197,30 @@
           <div id="rmgallery1"></div>
         </div> -->
 
-        <div id="cutcard-leftbottom"><img src="img/cutcard_leftbottom.png"></div>
-        <div id="cutcard-rightbottom"><img src="img/cutcard_rightbottom.png"></div>
+        <div id="cutcard-leftbottom"><img src="img/cutcard_leftbottom.png" alt="corner"></div>
+        <div id="cutcard-rightbottom"><img src="img/cutcard_rightbottom.png" alt="corner"></div>
       </div> <!--projects-->
 
     </div> <!--work-->
 
     <div id="contact">
-      <div class="arrow"><a id="contact-link" name="contact" href="#contact">Contact</a></div>
+      <div class="arrow"><a id="contact-link">Contact</a></div>
       <!--<div class="arrow-caption">Get in touch!</div>-->
-      <img id="me" class="border-standard" src="img/me_small.png" alt="">
       <div id="writing" class="handwritten">Get in touch!<p id="email-title">jenyferi@gmail.com</p></div>
+      <img id="me" class="border-standard" src="img/me_small.png" alt="">
 
       <ul id="contact-images">
-        <li><a id="email-link" href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny"><img class="link-imgs" id="email-img" src="img/email_circle.png"></a></li>
-        <li><a id="resume-link" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank"><img class="link-imgs" id="resume-img" src="img/resume_circle.png"></a></li>
-        <li><a id="linkedin-link" href="http://www.linkedin.com/in/jennymlin" target="_blank"><img class="link-imgs" id="linkedin-img" src="img/linkedin.png"></a></li>
-        <li><a id="pinterest-link" href="http://github.com/jenyferi"target="_blank"><img class="link-imgs" id="pinterest-img" src="img/github.png"></a></li>
+        <li><a id="email-link" href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny"><img class="link-imgs" id="email-img" src="img/email_circle.png" alt="email"></a></li>
+        <li><a id="resume-link" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank"><img class="link-imgs" id="resume-img" src="img/resume_circle.png" alt="resume"></a></li>
+        <li><a id="linkedin-link" href="http://www.linkedin.com/in/jennymlin" target="_blank"><img class="link-imgs" id="linkedin-img" src="img/linkedin.png" alt="linkedin"></a></li>
+        <li><a id="pinterest-link" href="http://github.com/jenyferi" target="_blank"><img class="link-imgs" id="pinterest-img" src="img/github.png" alt="github"></a></li>
       </ul>
 
       <ul id="link-captions">
         <li><a id="email-caption" href="mailto:jenyferi@gmail.com?Subject=Hi%20Jenny">Email</a></li>
         <li><a id="resume-caption" href="https://jennylin.s3.amazonaws.com/portfolio/files/jennylin_resume.pdf" target="_blank">Resume</a></li>
         <li><a id="linkedin-caption" href="http://www.linkedin.com/in/jennymlin" target="_blank">LinkedIn</a></li>
-        <li><a id="pinterest-caption" href="http://github.com/jenyferi"target="_blank">GitHub</a></li>
+        <li><a id="pinterest-caption" href="http://github.com/jenyferi" target="_blank">GitHub</a></li>
       </ul>
 
     </div>

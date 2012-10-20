@@ -1,5 +1,16 @@
 $(document).ready(function () {
 
+	$("#about-link").click(function(){goToByScroll("about-link")});
+	$("#about-nav-link").click(function(){goToByScroll("about-link")});
+	$("#work-link").click(function(){goToByScroll("work-link")});
+	$("#work-nav-link").click(function(){goToByScroll("work-link")});
+	$("#contact-link").click(function(){goToByScroll("contact-link")});
+	$("#contact-nav-link").click(function(){goToByScroll("contact-link")});
+
+	function goToByScroll(id){
+     	$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+	}
+
     var phillips_html = '<div id="phillips0"><img class="projectimg" src="img/projects/phillips0.png"></div><div id="phillips1"><img class="projectimg" src="img/projects/phillips1.png"></div><div id="phillips2"><img class="projectimg" src="img/projects/phillips2.png"></div><div id="phillips3"><img class="projectimg" src="img/projects/phillips3.png"></div>';
 
     var sears_html = '<div id="sears0"><img class="projectimg" src="img/projects/sears0.jpg"></div><div id="sears1"><img class="projectimg" src="img/projects/sears1.jpg"></div><div id="sears2"><img class="projectimg" src="img/projects/sears2.jpg"></div><div id="sears3"><img class="projectimg" src="img/projects/sears3.jpg"></div><div id="sears4"><img class="projectimg" src="img/projects/sears4.jpg"></div><div id="sears5"><img class="projectimg" src="img/projects/sears5.jpg"></div><div id="sears6"><img class="projectimg" src="img/projects/sears6.jpg"></div><div id="sears7"><img class="projectimg" src="img/projects/sears7.jpg"></div><div id="sears8"><img class="projectimg" src="img/projects/sears8.jpg"></div>';
@@ -32,7 +43,7 @@ $(document).ready(function () {
 			zIndexNumber -= 10;
 		});
 	});
-	
+
 	//adjusting text shadows based on browser
 	if($.browser.chrome){
 		$("#intro-top").css("color", "#545454");

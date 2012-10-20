@@ -32,25 +32,34 @@ d3.json("./js/bubbledata.json", function(json) {
         }
       })
       .on("mouseover", makeMeBig)
+      /*.on("mouseover", function(d){
+        return seeText(d);
+      })*/
       .on("mouseout", makeMeSmall);
 
-  //addText();
+  addText(node);
 
-  function addText(){
-    node.append("text")
-      .attr("text-anchor", "middle")
-      .attr("dy", ".3em")
-      //.text(function(d) { return d.className.substring(0, d.r / 3); });
-      .text(function(d) { return d.className; });
-  }
 });
+
+function addText(n) {
+  n.append("text")
+    .attr("text-anchor", "middle")
+    .attr("dy", ".3em")
+    //.text(function(d) { return d.className.substring(0, d.r / 3); });
+    .text(function(d) { return d.className; })
+    .attr("fill", d3.rgb("#ffffff"));
+}
+
+function seeText(n) {
+  console.log(n);
+}
 
 function makeMeBig() {
   d3.select(this)
     .transition()
     .delay(0)
     .duration(1000)
-    .attr("r", 80);
+    .attr("r", 50);
 }
 
 function makeMeSmall() {
@@ -58,11 +67,7 @@ function makeMeSmall() {
     .transition()
     .delay(0)
     .duration(1000)
-    .attr("r", 10);
-}
-
-function fadeInMyText(n) {
-  
+    .attr("r", function(d){return d.r;});
 }
 
 function getFill(n) {
