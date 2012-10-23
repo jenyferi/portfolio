@@ -147,16 +147,19 @@ $(document).ready(function () {
 		var dotshtml = "";
 		var delayTime = fadeTime*0.5;
 		var k = 0;
+		var inTransition = false;
 
 		//var shouldFlip = true;
 
-		for (var i=1; i<numImages; i++){
+		for (var i=0; i<numImages; i++){
 			//fade out all except first
 
-			$("#" + projectName + i).fadeOut(0); 
-		}
+			if (i==0){
+				$("#" + projectName + 0).fadeIn(fadeTime); 
+			}else {
+				$("#" + projectName + i).fadeOut(0); 
+			}
 
-		for (var j=0; j<numImages; j++){ 
 			//add stop flipping on hover to all images, including first
 
 			/*$("#" + projectName + j).hover(
@@ -170,9 +173,9 @@ $(document).ready(function () {
 				}
 			);*/
 
-			dotshtml += '<span id="dot' + j + '">.</span>';
+			dotshtml += '<span id="dot' + i + '">.</span>';
 
-			$("#" + projectName + j).click(
+			$("#" + projectName + i).click(
 				function(){
 					fadeMe(-1);
 				}
@@ -211,7 +214,11 @@ $(document).ready(function () {
 		);*/
 
 		function fadeMe(clickedDot){
-			$("#" + projectName + k).delay(delayTime).fadeOut(fadeTime, fadeNext(clickedDot));
+			if (!inTransition){
+				$("#" + projectName + k).delay(delayTime).fadeOut(fadeTime, fadeNext(clickedDot));
+			}
+			
+			inTransition = true;
 		}
 
 		function fadeNext(clickedDot){
@@ -227,7 +234,11 @@ $(document).ready(function () {
 				}
 			}
 
-			$("#" + projectName + k).delay(delayTime).fadeIn(fadeTime);
+			$("#" + projectName + k).delay(delayTime).fadeIn(fadeTime, 
+				function(){
+					inTransition = false;
+				}
+			);
 			$("#dot" + k).css("color", "#e98a9f");
 		}
 	}
