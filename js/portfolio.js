@@ -36,14 +36,6 @@ $(document).ready(function () {
     $("#tree1").html(tree_html);
     $("#pirates1").html(pirates_html);
 
-    $(function() {
-		var zIndexNumber = 1000;
-		$('div').each(function() {
-			$(this).css('zIndex', zIndexNumber);
-			zIndexNumber -= 10;
-		});
-	});
-
 	//adjusting text shadows based on browser
 	if($.browser.chrome){
 		$("#intro-top").css("color", "#545454");
