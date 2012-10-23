@@ -418,6 +418,8 @@ li {
 
 .projectimg {
 	position: absolute;
+	cursor: pointer;
+	cursor: hand;
 }
 
 #sears-imgs {

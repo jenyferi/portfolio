@@ -52,10 +52,10 @@ $(document).ready(function () {
 	//logo 
 	$("#ba").fadeOut(0);
 
-	$("#logo").hover(
+	/*$("#logo").hover(
 		function(){ $("#ba").fadeIn(200); },
 		function(){ $("#ba").fadeOut(200); }
-	);
+	);*/
 
 	//project swap and fade logic
 	var numProjects = 12;
@@ -141,29 +141,43 @@ $(document).ready(function () {
 
 	//projects
 	function projectImages(projectName, numImages){
+
+		//var shouldFlip = true;
+
 		for (var i=1; i<numImages; i++){
-			$("#" + projectName + i).fadeOut(0); //fade out all except first
+			//fade out all except first
+
+			$("#" + projectName + i).fadeOut(0); 
 		}
 
+		for (var j=0; j<numImages; j++){ 
+			//add stop flipping on hover to all images, including first
+
+			/*$("#" + projectName + j).hover(
+				function(){
+					console.log("hover over");
+					shouldFlip = false;
+				},
+				function(){
+					console.log("hover off");
+					shouldFlip = true;
+				}
+			);*/
+
+			$("#" + projectName + j).click(
+				function(){
+					fadeMe();
+				}
+			);
+		}
+
+		var delayTime = fadeTime;
 		var k = 0;
-		var changeTime = fadeTime*10;
-		var delayTime = fadeTime*2;
+		/*var changeTime = fadeTime*10;
 		var timesrun = 0;
-		var shouldFlip = true;
 
 		var interval = setInterval(
 			function fadeImage(){
-				/*$("#" + projectName + k).hover(
-					function(){
-						console.log("hover over");
-						shouldFlip = false;
-					},
-					function(){
-						console.log("hover off");
-						shouldFlip = true;
-					}
-				);*/
-
 				if (shouldFlip){
 					$("#" + projectName + k).fadeOut(fadeTime, fadeNext());
 					timesrun++;
@@ -173,14 +187,20 @@ $(document).ready(function () {
 					clearInterval(interval);
 				}
 			}, changeTime
-		);
+		);*/
+
+		function fadeMe(){
+			console.log(k);
+			$("#" + projectName + k).delay(delayTime).fadeOut(fadeTime, fadeNext);
+		}
 
 		function fadeNext(){
-			if (k==numImages-1){
+			if (k>=numImages-1){
 				k=0;	
 			}else {
 				k++;
 			}
+			console.log(k);
 
 			$("#" + projectName + k).delay(delayTime).fadeIn(fadeTime);
 		}
