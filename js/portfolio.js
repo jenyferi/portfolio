@@ -152,8 +152,8 @@ $(document).ready(function () {
 		//var shouldFlip = true;
 
 		for (var i=0; i<numImages; i++){
-			//fade out all except first
 
+			//fade out all except first, fade in first
 			if (i==0){
 				$("#" + projectName + 0).fadeIn(fadeTime); 
 			}else {
@@ -214,11 +214,12 @@ $(document).ready(function () {
 		);*/
 
 		function fadeMe(clickedDot){
-			if (!inTransition){
+			console.log("clickeddot " + clickedDot + " currk " + k);
+
+			if (!inTransition && (clickedDot != k)){
 				$("#" + projectName + k).delay(delayTime).fadeOut(fadeTime, fadeNext(clickedDot));
+				inTransition = true;
 			}
-			
-			inTransition = true;
 		}
 
 		function fadeNext(clickedDot){
