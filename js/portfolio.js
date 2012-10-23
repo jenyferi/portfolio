@@ -101,6 +101,8 @@ $(document).ready(function () {
 		  			projectImages("phillips", 4);
 		  		}else if (currProject == 7){ 
 		  			projectImages("freise", 4);
+		  		}else {
+		  			removeImageDots();
 		  		}
   			}
   		);
@@ -142,6 +144,10 @@ $(document).ready(function () {
 	//projects
 	function projectImages(projectName, numImages){
 
+		var dotshtml = "";
+		var delayTime = fadeTime*0.5;
+		var k = 0;
+
 		//var shouldFlip = true;
 
 		for (var i=1; i<numImages; i++){
@@ -164,15 +170,30 @@ $(document).ready(function () {
 				}
 			);*/
 
+			dotshtml += '<span id="dot' + j + '">.</span>';
+
 			$("#" + projectName + j).click(
 				function(){
-					fadeMe();
+					fadeMe(-1);
 				}
 			);
 		}
 
-		var delayTime = fadeTime;
-		var k = 0;
+		$("#img-dots").html(dotshtml);
+		$("#dot0").css("color", "#e98a9f"); //highlight first image
+
+		for (var l=0; l<numImages; l++){
+			$("#dot" + l).click(
+				function(){
+					var dotNo = $(this).attr("id")[3]; //get the last index, which is the #
+					fadeMe(dotNo);
+				}
+			);
+			$("#dot" + l).hover(
+				function(){$(this).css("cursor","pointer")},
+				function(){$(this).css("cursor","default")}
+			);
+		}
 		/*var changeTime = fadeTime*10;
 		var timesrun = 0;
 
@@ -189,21 +210,30 @@ $(document).ready(function () {
 			}, changeTime
 		);*/
 
-		function fadeMe(){
-			console.log(k);
-			$("#" + projectName + k).delay(delayTime).fadeOut(fadeTime, fadeNext);
+		function fadeMe(clickedDot){
+			$("#" + projectName + k).delay(delayTime).fadeOut(fadeTime, fadeNext(clickedDot));
 		}
 
-		function fadeNext(){
-			if (k>=numImages-1){
-				k=0;	
-			}else {
-				k++;
+		function fadeNext(clickedDot){
+			$("#dot" + k).css("color", "#9ec0bc"); //changes old dot to old color
+
+			if (clickedDot != -1){ //if this was a clicked dot
+				k = clickedDot;
+			}else { //this was a clicked image
+				if (k>=numImages-1){
+					k=0;	
+				}else {
+					k++;
+				}
 			}
-			console.log(k);
 
 			$("#" + projectName + k).delay(delayTime).fadeIn(fadeTime);
+			$("#dot" + k).css("color", "#e98a9f");
 		}
+	}
+
+	function removeImageDots(){
+		$("#img-dots").html("");
 	}
 	////////////////////////////////////////////////////////////////////////////////////////
 
