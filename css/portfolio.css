@@ -401,10 +401,12 @@ li {
 
 #castle1 {
 	margin-top: 8px;
+	border: 1px #cccccc solid;
 }
 
 #forest1 {
 	margin-top: 15px;
+	border: 1px #cccccc solid;
 }
 
 #pirates1 {
@@ -412,11 +414,21 @@ li {
 }
 
 #tree1 {
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
+	width: 400px;
+	height: 400px; 
+	border: 1px #cccccc solid;
 }
 
 #wildswans1 {
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 10px;
+	width: 720px;
+	height: 396px;
+	border: 1px #cccccc solid;
 }
 
 #rmgallery1 {
@@ -439,6 +451,9 @@ li {
 
 #kayak-imgs {
 	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 720px;
 }
 
 #android-imgs {

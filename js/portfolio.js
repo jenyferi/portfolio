@@ -214,8 +214,6 @@ $(document).ready(function () {
 		);*/
 
 		function fadeMe(clickedDot){
-			console.log("clickeddot " + clickedDot + " currk " + k);
-
 			if (!inTransition && (clickedDot != k)){
 				$("#" + projectName + k).delay(delayTime).fadeOut(fadeTime, fadeNext(clickedDot));
 				inTransition = true;
