@@ -17,13 +17,13 @@ $(document).ready(function () {
 
     var android_html = '<div id="android0"><img class="projectimg" src="img/projects/android0.jpg"></div><div id="android1"><img class="projectimg" src="img/projects/android1.jpg"></div><div id="android2"><img class="projectimg" src="img/projects/android2.jpg"></div><div id="android3"><img class="projectimg" src="img/projects/android3.jpg"></div><div id="android4"><img class="projectimg" src="img/projects/android4.jpg"></div><div id="android5"><img class="projectimg" src="img/projects/android5.jpg"></div>';
 
-    var wildswans_html = '<iframe src="http://player.vimeo.com/video/35960103?title=0&byline=0&portrait=0&color=d46fab" width="720" height="396" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+    var wildswans_html = '<iframe id="player1" src="http://player.vimeo.com/video/35960103?title=0&byline=0&portrait=0&color=d46fab" width="720" height="396" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 
     var freise_html = '<div id="freise0"><img class="projectimg" src="img/projects/freise0.jpg"></div><div id="freise1"><img class="projectimg" src="img/projects/freise1.jpg"></div><div id="freise2"><img class="projectimg" src="img/projects/freise2.jpg"></div><div id="freise3"><img class="projectimg" src="img/projects/freise3.jpg"></div>';
 
     var kayak_html = '<div id="kayak0"><img class="projectimg" src="img/projects/kayak0.png"></div><div id="kayak1"><img class="projectimg" src="img/projects/kayak1.png"></div><div id="kayak2"><img class="projectimg" src="img/projects/kayak2.png"></div><div id="kayak3"><img class="projectimg" src="img/projects/kayak3.png"></div><div id="kayak4"><img class="projectimg" src="img/projects/kayak4.png"></div><div id="kayak5"><img class="projectimg" src="img/projects/kayak5.png"></div>';
 
-    var tree_html = '<iframe src="http://player.vimeo.com/video/35948137?title=0&byline=0&portrait=0&color=d46fab&autoplay=1&loop=1" width="400" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+    var tree_html = '<iframe id="player2" src="http://player.vimeo.com/video/35948137?title=0&byline=0&portrait=0&color=d46fab&autoplay=1&loop=1" width="400" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
 
     var pirates_html = '<img src="img/pirates.png" alt="pirates">';
 
@@ -141,6 +141,36 @@ $(document).ready(function () {
      });*/
 	////////////////////////////////////////////////////////////////////////////////////////
 
+	//communicate with vimeo player
+	var iframe = $('#player1')[0];
+    var player = $f(iframe);
+
+	// When the player is ready, add listeners for pause, finish, and playProgress
+	player.addEvent('ready', function() {
+	    console.log("ready");
+	    
+	    player.addEvent('pause', onPause);
+	    player.addEvent('finish', onFinish);
+	    player.addEvent('playProgress', onPlayProgress);
+	});
+
+	// Call the API when a button is pressed
+	$('button').bind('click', function() {
+	    player.api($(this).text().toLowerCase());
+	});
+
+	function onPause(id) {
+	    console.log("paused");
+	}
+
+	function onFinish(id) {
+	    console.log("finished");
+	}
+
+	function onPlayProgress(data, id) {
+	    console.log(data.seconds + "s played");
+	}
+
 	//projects
 	function projectImages(projectName, numImages){
 
@@ -232,13 +262,14 @@ $(document).ready(function () {
 					k++;
 				}
 			}
+			
+			$("#dot" + k).css("color", "#e98a9f");
 
 			$("#" + projectName + k).delay(delayTime).fadeIn(fadeTime, 
 				function(){
 					inTransition = false;
 				}
 			);
-			$("#dot" + k).css("color", "#e98a9f");
 		}
 	}
 

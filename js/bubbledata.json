@@ -4,59 +4,56 @@
   {
    "name": "1",
    "children": [
-    {"name": "Drawing", "size": 8},
-    {"name": "Arduino", "size": 2},
-    {"name": "Tablet painting", "size": 7},
-    {"name": "Watercolors", "size": 4}
+    {"name": "jQuery", "size": 5},
+    {"name": "Arduino", "size": 5},
+    {"name": "JavaScript", "size": 5},
+    {"name": "HTML", "size": 5},
+    {"name": "CSS3", "size": 5}
    ]
   },
   {
    "name": "2",
    "children": [
-    {"name": "Swimming", "size": 5},
-    {"name": "Running", "size": 1},
-    {"name": "Yoga", "size": 3},
-    {"name": "Dance classes", "size": 4},
-    {"name": "Rock Climbing", "size": 3},
-    {"name": "Walking", "size": 8},
-    {"name": "Hiking", "size": 2}
+    {"name": "Photoshop", "size": 7},
+    {"name": "Illustrator", "size": 7}
    ]
   },
   {
    "name": "3",
    "children": [
-    {"name": "Cooking", "size": 5},
-    {"name": "Sewing costumes", "size": 3}
+    {"name": "Flex", "size": 4},
+    {"name": "Flash", "size": 4},
+    {"name": "ActionScript 3", "size": 4}
    ]
   },
   {
    "name": "4",
    "children": [
-    {"name": "Reddit", "size": 2},
-    {"name": "YouTube", "size": 1}
+    {"name": "Cross-browser", "size": 5},
+    {"name": "YouTube", "size": 5}
    ]
   },
   {
    "name": "5",
    "children": [
-    {"name": "Jamestown", "size": 2},
-    {"name": "Adventure Time", "size": 3}
-   ]
-  },
-  {
-   "name": "7",
-   "children": [
-    {"name": "Singing", "size": 3},
-    {"name": "Piano", "size": 6}
+    {"name": "Jamestown", "size": 5},
+    {"name": "Adventure Time", "size": 5}
    ]
   },
   {
    "name": "6",
    "children": [
-    {"name": "Coffee", "size": 3},
-    {"name": "Lattes", "size": 3},
-    {"name": "Bubble tea", "size": 7},
-    {"name": "Barley tea", "size": 4}
+    {"name": "Singing", "size": 5},
+    {"name": "Piano", "size": 5}
+   ]
+  },
+  {
+   "name": "7",
+   "children": [
+    {"name": "Coffee", "size": 5},
+    {"name": "Lattes", "size": 5},
+    {"name": "Bubble tea", "size": 5},
+    {"name": "Barley tea", "size": 5}
    ]
   }
  ]

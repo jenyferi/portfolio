@@ -1,4 +1,4 @@
-var r = 400,
+var r = 500,
     format = d3.format(",d"),
     fill = d3.scale.category20c();
 
@@ -59,7 +59,12 @@ function makeMeBig() {
     .transition()
     .delay(0)
     .duration(1000)
-    .attr("r", 50);
+    .attr("fill", d3.rgb("#ffffff"));
+  /*d3.select(this)
+    .transition()
+    .delay(0)
+    .duration(1000)
+    .attr("r", 70);*/
 }
 
 function makeMeSmall() {
@@ -67,7 +72,12 @@ function makeMeSmall() {
     .transition()
     .delay(0)
     .duration(1000)
-    .attr("r", function(d){return d.r;});
+    .attr("fill", function(d){return getFill(d)});
+  /*d3.select(this)
+    .transition()
+    .delay(0)
+    .duration(1000)
+    .attr("r", function(d){return d.r;});*/
 }
 
 function getFill(n) {

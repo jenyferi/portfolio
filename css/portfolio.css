@@ -17,6 +17,7 @@ body {
 
 text {
 	font-size: 0.7em;
+	cursor: default;
 }
 
 ::selection {
