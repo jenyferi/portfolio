@@ -86,14 +86,11 @@ $(document).ready(function () {
 
 	function onPlay(id) {
 		is_ws_playing = true;
-		console.log(player);
 	    //console.log("play");
 	}
 
 	function pausePlayer(){
-		console.log("in is_ws_playing" + player);
 		player.api("pause");
-		//player.pause();
 	}
 
 	//project swap and fade logic
@@ -150,8 +147,10 @@ $(document).ready(function () {
 
 		//if someone types in a wrong project #
 		if (newProject > numProjects || newProject <= 0){
+			if (newProject != ""){
+				location.hash = hashname + "" + 1;
+			}
 			newProject = 1;
-			location.hash = hashname + "" + 1;
 		}
 
 		loadProject(newProject); 
