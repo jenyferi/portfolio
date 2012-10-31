@@ -151,6 +151,7 @@ $(document).ready(function () {
 		//if someone types in a wrong project #
 		if (newProject > numProjects || newProject <= 0){
 			newProject = 1;
+			location.hash = hashname + "" + 1;
 		}
 
 		loadProject(newProject); 
@@ -162,7 +163,7 @@ $(document).ready(function () {
 	function loadProject(hashID){
 		hashID = hashID - 1;
 		prevProject = prevProject - 1;
-		console.log("previous project = " + prevProject);
+		//console.log("previous project = " + prevProject);
 		$("#project" + prevProject).fadeOut(fadeTime, 
   			function(){
 				if (is_ws_playing){
