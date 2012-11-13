@@ -93,6 +93,7 @@ li {
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	font-size: 1.2em;
+	-webkit-text-stroke: 1px;
 }
 
 #navbar li {
@@ -105,7 +106,6 @@ li {
 	vertical-align: top;
 	display: inline-block;
 	color: #ffffff;
-	zoom: 1;
 	*display: inline;
 }
 
