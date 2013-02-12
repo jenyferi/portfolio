@@ -80,45 +80,10 @@ li {
 
 #navbar{
 	background-color: #8b796d;
-    height: 50px;
+    height: 10px;
     width: 100%;
     border-bottom: 1px #666666 solid;
 	background-image:url('../img/fabric_brown.png');
-}
-
-#navbar  ul {
-	text-align: center;
-	color: #ffffff;
-	text-transform: uppercase;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	font-size: 1.2em;
-	-webkit-text-stroke: 1px;
-}
-
-#navbar li {
-	display: inline;
-	margin-left: 27px;
-	margin-right: 13px;
-}
-
-#navbar a {
-	vertical-align: top;
-	display: inline-block;
-	color: #ffffff;
-	*display: inline;
-}
-
-#navbar a:visited {
-	color: #ffffff;
-}
-
-#navbar a:hover {
-	color: #bbbbbb;
-}
-
-.nav-element {
-	margin-top: 13px;
 }
 
 #logo {
