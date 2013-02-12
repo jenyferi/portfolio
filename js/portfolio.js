@@ -180,39 +180,6 @@ $(document).ready(function () {
   		);
 	}
 
-	/*$("#button-right").click(function() {
-		$(this).effect("bounce", { direction:'left', times:5 }, 200);
-	});
-
-    $("#button-left").effect("bounce", { direction:'right', times:5 }, 200);*/
-
-	//history logo hovers 
-	/*$("#history-img1").hover(
-          function(){this.src = this.src.replace("img/cornell.png","img/history1.png");},
-          function(){this.src = this.src.replace("img/history1.png","img/cornell.png");
-     });
-	
-	$("#history-img2").hover(
-          function(){this.src = this.src.replace("img/cornell.png","img/history2.png");},
-          function(){this.src = this.src.replace("img/history2.png","img/cornell.png");
-     });
-	
-	$("#history-img3").hover(
-          function(){this.src = this.src.replace("img/transistor.png","img/history3.png");},
-          function(){this.src = this.src.replace("img/history3.png","img/transistor.png");
-     });
-	
-	$("#history-img4").hover(
-          function(){this.src = this.src.replace("img/sva.png","img/history4.png");},
-          function(){this.src = this.src.replace("img/history4.png","img/sva.png");
-     });
-
-	$("#history-img5").hover(
-          function(){this.src = this.src.replace("img/google.png","img/history5.png");},
-          function(){this.src = this.src.replace("img/history5.png","img/google.png");
-     });*/
-	////////////////////////////////////////////////////////////////////////////////////////
-
 	//projects
 	function projectImages(projectName, numImages){
 
@@ -231,19 +198,6 @@ $(document).ready(function () {
 			}else {
 				$("#" + projectName + i).fadeOut(0); 
 			}
-
-			//add stop flipping on hover to all images, including first
-
-			/*$("#" + projectName + j).hover(
-				function(){
-					console.log("hover over");
-					shouldFlip = false;
-				},
-				function(){
-					console.log("hover off");
-					shouldFlip = true;
-				}
-			);*/
 
 			dotshtml += '<span id="dot' + i + '">.</span>';
 
@@ -269,21 +223,6 @@ $(document).ready(function () {
 				function(){$(this).css("cursor","default")}
 			);
 		}
-		/*var changeTime = fadeTime*10;
-		var timesrun = 0;
-
-		var interval = setInterval(
-			function fadeImage(){
-				if (shouldFlip){
-					$("#" + projectName + k).fadeOut(fadeTime, fadeNext());
-					timesrun++;
-				}
-
-				if (timesrun >= 2*numImages) {
-					clearInterval(interval);
-				}
-			}, changeTime
-		);*/
 
 		function fadeMe(clickedDot){
 			if (!inTransition && (clickedDot != k)){
@@ -359,5 +298,4 @@ $(document).ready(function () {
 	swfobject.embedSWF("flash/quaker_coconut.swf", "quaker2", "300", "250", "9.0.0", "js/expressInstall.swf");
 	swfobject.embedSWF("flash/castle.swf", "castle1", "680", "425", "9.0.0", "js/expressInstall.swf");
 	swfobject.embedSWF("flash/forest.swf", "forest1", "680", "425", "9.0.0", "js/expressInstall.swf");
-	//swfobject.embedSWF("http://jennylin.s3.amazonaws.com/portfolio/images/projects/twitter/twitter.swf", "rmgallery1", "120", "450", "9.0.0", "js/expressInstall.swf");
 });
