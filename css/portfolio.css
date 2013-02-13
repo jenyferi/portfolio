@@ -278,12 +278,12 @@ li {
 	text-transform: uppercase;
 	color: #aaaaaa;
 	font-size: 0.9em;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 #img-dots {
 	color: #cccccc;
-	margin-top: 27px;
+	margin-top: 15px;
 	font-size: 7em;
 	line-height: 0em;
 }
@@ -291,10 +291,10 @@ li {
 .workbox {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
+	margin-top: 40px;
 	text-align: center;
 	width: 900px;
-	height: 620px;
+	height: 630px;
 	background-color: #f3f3f3;
 	background-image:url('../img/papertexture_light.png');
 }
@@ -324,26 +324,23 @@ li {
 }
 
 .workbox-title {
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	margin-top: 5px;
-	font-size: 2.2em;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 1.8em;
 	text-align: center;
-	text-transform: uppercase;
-	text-shadow: 0.04em 0.04em 0.03em #888888;
 }
 
 .workbox-caption {
 	font-size: 1em;
-	margin-top: 5px;
+	margin-top: -5px;
 	text-align: center;
 }
 
 .workbox-description {
 	margin-left: 110px;
 	margin-right: 110px;
-	margin-top: 10px;
-	font-size: 0.9em;
+	margin-top: 20px;
+	font-size: 1em;
 	text-align: center;
 	padding: 0px;
 }
@@ -376,6 +373,7 @@ li {
 }
 
 .projectimg {
+	margin-top: 5px;
 	position: absolute;
 	cursor: pointer;
 	cursor: hand;
@@ -383,65 +381,65 @@ li {
 
 #astridachievement-imgs {
 	height: 430px;
-	margin-top: 5px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 287px;
+}
+
+.astridachievement-img {
+	/*width: 287px;*/
+	margin-left: -143px;
 }
 
 #astridandroid-imgs {
 	height: 430px;
-	margin-top: 5px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 242px;
+}
+
+.astridandroid-img {
+	/*width: 242px;*/
+	margin-left: -121px;
 }
 
 #familyleafonboarding-imgs {
 	height: 430px;
-	margin-top: 5px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 780px;
+}
+
+.familyleafonboarding-img {
+	/*width: 780px;*/
+	margin-left: -390px;
 }
 
 #familyleafblog-imgs {
 	height: 430px;
-	margin-top: 5px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 780px;
 }
 
-#android-imgs {
-	height: 412px;
-	margin-top: 5px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 780px;
+.familyleafblog-img {
+	/*width: 780px;*/
+	margin-left: -390px;
 }
 
 #phillips-imgs {
 	height: 430px;
-	margin-top: 5px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 780px;
+}
+
+.phillips-img {
+	/*width: 780px;*/
+	margin-left: -390px;
 }
 
 #freise-imgs {
 	height: 430px;
-	margin-top: 5px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 573px;
+}
+
+.freise-img {
+	/*width: 573px;*/
+	margin-left: -286px;
+}
+
+#android-imgs {
+	height: 412px;
+}
+
+.android-img {
+	/*width: 780px;*/
+	margin-left: -390px;
 }
 
 #me {
@@ -489,7 +487,7 @@ li {
 }
 
 #footer {
-	margin-top: 40px;
+	margin-top: 50px;
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;

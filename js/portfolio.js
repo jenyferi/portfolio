@@ -1,22 +1,24 @@
 $(document).ready(function () {
 
-	var familyleafblog_html = '<div id="blog0"><img class="projectimg" src="img/projects/blog0.jpg"></div><div id="blog1"><img class="projectimg" src="img/projects/blog1.jpg"></div><div id="blog2"><img class="projectimg" src="img/projects/blog2.jpg"></div>';
-	var phillips_html = '<div id="phillips0"><img class="projectimg" src="img/projects/phillips0.jpg"></div><div id="phillips1"><img class="projectimg" src="img/projects/phillips1.jpg"></div><div id="phillips2"><img class="projectimg" src="img/projects/phillips2.jpg"></div><div id="phillips3"><img class="projectimg" src="img/projects/phillips3.jpg"></div>';
-    //var android_html = '<div id="android0"><img class="projectimg" src="img/projects/android0.jpg"></div><div id="android1"><img class="projectimg" src="img/projects/android1.jpg"></div><div id="android2"><img class="projectimg" src="img/projects/android2.jpg"></div><div id="android3"><img class="projectimg" src="img/projects/android3.jpg"></div><div id="android4"><img class="projectimg" src="img/projects/android4.jpg"></div><div id="android5"><img class="projectimg" src="img/projects/android5.jpg"></div>';
+    var familyleafonboarding_html = '<div id="onboarding0"><img class="projectimg familyleafonboarding-img" src="img/projects/onboarding0.jpg"></div><div id="onboarding1"><img class="projectimg familyleafonboarding-img" src="img/projects/onboarding1.jpg"></div><div id="onboarding2"><img class="projectimg familyleafonboarding-img" src="img/projects/onboarding2.jpg"></div><div id="onboarding3"><img class="projectimg familyleafonboarding-img" src="img/projects/onboarding3.jpg"></div><div id="onboarding4"><img class="projectimg familyleafonboarding-img" src="img/projects/onboarding4.jpg"></div>';
+	var familyleafblog_html = '<div id="blog0"><img class="projectimg familyleafblog-img" src="img/projects/blog0.jpg"></div><div id="blog1"><img class="projectimg familyleafblog-img" src="img/projects/blog1.jpg"></div><div id="blog2"><img class="projectimg familyleafblog-img" src="img/projects/blog2.jpg"></div>';
+	var phillips_html = '<div id="phillips0"><img class="projectimg phillips-img" src="img/projects/phillips0.jpg"></div><div id="phillips1"><img class="projectimg phillips-img" src="img/projects/phillips1.jpg"></div><div id="phillips2"><img class="projectimg phillips-img" src="img/projects/phillips2.jpg"></div><div id="phillips3"><img class="projectimg phillips-img" src="img/projects/phillips3.jpg"></div>';
+    var astridachievement_html = '<div id="achievement0"><img class="projectimg astridachievement-img" src="img/projects/achievement0.png"></div><div id="achievement1"><img class="projectimg astridachievement-img" src="img/projects/achievement1.png"></div><div id="achievement2"><img class="projectimg astridachievement-img" src="img/projects/achievement2.png"></div><div id="achievement3"><img class="projectimg astridachievement-img" src="img/projects/achievement3.png"></div>';
+    var astridandroid_html = '<div id="astridandroid0"><img class="projectimg astridandroid-img" src="img/projects/astridandroid0.png"></div><div id="astridandroid1"><img class="projectimg astridandroid-img" src="img/projects/astridandroid1.png"></div><div id="astridandroid2"><img class="projectimg astridandroid-img" src="img/projects/astridandroid2.png"></div><div id="astridandroid3"><img class="projectimg astridandroid-img" src="img/projects/astridandroid3.png"></div><div id="astridandroid4"><img class="projectimg astridandroid-img" src="img/projects/astridandroid4.png"></div>';
     var wildswans_html = '<iframe id="player1" src="http://player.vimeo.com/video/35960103?title=0&byline=0&portrait=0&color=d46fab&player_id=player1&api=1" width="720" height="396" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
-    //var freise_html = '<div id="freise0"><img class="projectimg" src="img/projects/freise0.jpg"></div><div id="freise1"><img class="projectimg" src="img/projects/freise1.jpg"></div><div id="freise2"><img class="projectimg" src="img/projects/freise2.jpg"></div><div id="freise3"><img class="projectimg" src="img/projects/freise3.jpg"></div>';
     var pirates_html = '<img src="img/pirates.png" alt="pirates">';
-    var astridachievement_html = '<div id="achievement0"><img class="projectimg" src="img/projects/achievement0.png"></div><div id="achievement1"><img class="projectimg" src="img/projects/achievement1.png"></div><div id="achievement2"><img class="projectimg" src="img/projects/achievement2.png"></div><div id="achievement3"><img class="projectimg" src="img/projects/achievement3.png"></div>';
-    var astridandroid_html = '<div id="astridandroid0"><img class="projectimg" src="img/projects/astridandroid0.png"></div><div id="astridandroid1"><img class="projectimg" src="img/projects/astridandroid1.png"></div><div id="astridandroid2"><img class="projectimg" src="img/projects/astridandroid2.png"></div><div id="astridandroid3"><img class="projectimg" src="img/projects/astridandroid3.png"></div><div id="astridandroid4"><img class="projectimg" src="img/projects/astridandroid4.png"></div>';
+    //var android_html = '<div id="android0"><img class="projectimg" src="img/projects/android0.jpg"></div><div id="android1"><img class="projectimg" src="img/projects/android1.jpg"></div><div id="android2"><img class="projectimg" src="img/projects/android2.jpg"></div><div id="android3"><img class="projectimg" src="img/projects/android3.jpg"></div><div id="android4"><img class="projectimg" src="img/projects/android4.jpg"></div><div id="android5"><img class="projectimg" src="img/projects/android5.jpg"></div>';
+    //var freise_html = '<div id="freise0"><img class="projectimg" src="img/projects/freise0.jpg"></div><div id="freise1"><img class="projectimg" src="img/projects/freise1.jpg"></div><div id="freise2"><img class="projectimg" src="img/projects/freise2.jpg"></div><div id="freise3"><img class="projectimg" src="img/projects/freise3.jpg"></div>';
 
+    $("#familyleafonboarding-imgs").html(familyleafonboarding_html);
     $("#familyleafblog-imgs").html(familyleafblog_html);
     $("#phillips-imgs").html(phillips_html);
-    //$("#android-imgs").html(android_html);
-    $("#wildswans1").html(wildswans_html);
-    //$("#freise-imgs").html(freise_html);
-    $("#pirates1").html(pirates_html);
     $("#astridachievement-imgs").html(astridachievement_html);
     $("#astridandroid-imgs").html(astridandroid_html);
+    $("#wildswans1").html(wildswans_html);
+    $("#pirates1").html(pirates_html);
+    //$("#android-imgs").html(android_html);
+	//$("#freise-imgs").html(freise_html);
 
 	//adjusting text shadows based on browser
 	if($.browser.chrome){
@@ -152,6 +154,8 @@ $(document).ready(function () {
 
 		  		if (hashID == 4){ 
 		  			projectImages("phillips", 4);
+		  		}else if (hashID == 0){ 
+		  			projectImages("onboarding", 5);
 		  		}else if (hashID == 1){ 
 		  			projectImages("blog", 3);
 		  		}else if (hashID == 3){ 
