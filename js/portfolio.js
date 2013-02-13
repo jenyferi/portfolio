@@ -260,13 +260,13 @@ $(document).ready(function () {
 	});
 
 	$("#email-img").hover(
-		function(){this.src = this.src.replace("img/email_circle.png","img/email_circle_hover.png");},
-		function(){this.src = this.src.replace("img/email_circle_hover.png","img/email_circle.png");
+		function(){this.src = this.src.replace("img/email.png","img/email_hover.png");},
+		function(){this.src = this.src.replace("img/email_hover.png","img/email.png");
 	});
 
 	$("#resume-img").hover(
-		function(){this.src = this.src.replace("img/resume_circle.png","img/resume_circle_hover.png");},
-		function(){this.src = this.src.replace("img/resume_circle_hover.png","img/resume_circle.png");
+		function(){this.src = this.src.replace("img/resume.png","img/resume_hover.png");},
+		function(){this.src = this.src.replace("img/resume_hover.png","img/resume.png");
 	});
 
 	swfobject.embedSWF("flash/castle.swf", "castle1", "680", "425", "9.0.0", "js/expressInstall.swf");

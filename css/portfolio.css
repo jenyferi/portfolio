@@ -35,7 +35,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: #e98a9f;
+	color: #9ec0bc;
 }
 
 a:hover {
@@ -152,6 +152,7 @@ li {
 	width: 565px;
 	text-align: center;
 	font-family: 'Cookie', cursive;
+	font-weight: 400;
 	font-size: 3.6em;
 	background-repeat: no-repeat;
 	padding-top: 16px;
@@ -355,16 +356,6 @@ li {
 	height: 520px;
 }
 
-#haagen1 {
-	margin-top: 25px;
-	margin-bottom: 10px;
-}
-
-#quaker1 {
-	margin-top: 70px;
-	margin-right: 20px;
-}
-
 #castle1 {
 	margin-top: 8px;
 	border: 1px #cccccc solid;
@@ -377,15 +368,6 @@ li {
 
 #pirates1 {
 	margin-top: 5px;
-}
-
-#tree1 {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	width: 400px;
-	height: 400px; 
-	border: 1px #cccccc solid;
 }
 
 #wildswans1 {
@@ -405,21 +387,6 @@ li {
 	position: absolute;
 	cursor: pointer;
 	cursor: hand;
-}
-
-#sears-imgs {
-	margin-top: 50px;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	width: 500px;
-}
-
-#kayak-imgs {
-	margin-top: 5px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 720px;
 }
 
 #android-imgs {
@@ -454,79 +421,30 @@ li {
 	height: 190px;
 }
 
-#writing {	
-	position: absolute;
-	line-height: 1.3em;
-	margin-left: 108px;
-	margin-top: 40px;
-	left: 50%;
-	width: 171px;
-	height: 81px;
-	padding-left: 5px;
-	padding-top: 27px;
-	background-image:url('../img/speech_bubble.png');
-}
-
-#email-title {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 0.75em;
-	text-transform: uppercase;
+#contact-writing {
+	margin-top: 10px;
 }
 
 .link-imgs {
 	border: none;
-	width: 37px;
-	height: 37px;
+	width: 47px;
+	height: 47px;
 }
 
 #contact-images {
 	clear: both;
 	text-align: center;
 	padding: 0px;
-	margin-top: 25px;
+	margin-top: 10px;
 }
 
 #contact-images li {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 15px;
-	margin-left: 15px;
+	margin-right: 5px;
+	margin-left: 5px;
 	zoom: 1;
 	*display: inline;
-}
-
-#link-captions {
-	margin-left: auto;
-	margin-right: auto;
-	width: 295px;
-	margin-top: 5px;
-	text-align: left;
-}
-
-#link-captions li {
-	font-size: 0.9em;
-	display: inline;
-}
-
-#email-caption {
-	margin-left: 25px;
-	*margin-left: 10px;
-}
-
-#resume-caption {
-	margin-left: 24px;
-	*margin-left: 22px;
-}
-
-#linkedin-caption {
-	margin-left: 15px;
-	*margin-left: 11px;
-}
-
-#pinterest-caption {
-	margin-left: 18px;
-	*margin-left: 12px;
 }
 
 #footer {
