@@ -81,8 +81,7 @@ li {
 	background-color: #8b796d;
     height: 10px;
     width: 100%;
-    border-bottom: 1px #666666 solid;
-	background-image:url('../img/fabric_brown.png');
+	background-image:url('../img/fabric_gray.png');
 }
 
 #logo {
@@ -122,13 +121,26 @@ li {
 #intro-second {
 	text-align: center;
 	padding-top: 5px;
-	margin-bottom: 120px;
+	margin-bottom: 40px;
 	font-size: 1.5em;
 	line-height: 1.4em;
 }
 
 #intro-second-thirdline {
 	padding-top: 10px;
+}
+
+#intro-third {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+#intro-fourth {
+	margin-top: 20px;
+	font-size: 1.3em;
+	line-height: 1.4em;
 }
 
 .arrow {
@@ -284,7 +296,7 @@ li {
 	text-align: center;
 	width: 900px;
 	height: 620px;
-	margin-bottom: 130px;
+	margin-bottom: 90px;
 	background-color: #f3f3f3;
 	background-image:url('../img/papertexture_light.png');
 }
@@ -408,11 +420,14 @@ li {
 }
 
 #me {
-	margin-top: 25px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 190px;
 	height: 190px;
+}
+
+#contact {
+	margin-bottom: 120px;
 }
 
 #contact-writing {
@@ -446,14 +461,12 @@ li {
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	background-color: #8b796d;
-	margin-top: 80px;
     height: 20px;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: 1px #666666 solid;
     font-size: 1em;
-	background-image:url('../img/fabric_brown.png');
+	background-image:url('../img/fabric_gray.png');
 }
 
 #copyright {
