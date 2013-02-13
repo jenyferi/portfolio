@@ -354,7 +354,7 @@ li {
 	margin-right: 110px;
 	margin-top: 10px;
 	font-size: 0.9em;
-	text-align: left;
+	text-align: center;
 	padding: 0px;
 }
 
@@ -396,6 +396,7 @@ li {
 }
 
 #android-imgs {
+	height: 412px;
 	margin-top: 5px;
 	text-align: left;
 	margin-left: auto;
@@ -404,6 +405,7 @@ li {
 }
 
 #phillips-imgs {
+	height: 430px;
 	margin-top: 5px;
 	text-align: left;
 	margin-left: auto;
@@ -412,6 +414,7 @@ li {
 }
 
 #freise-imgs {
+	height: 430px;
 	margin-top: 5px;
 	text-align: left;
 	margin-left: auto;
@@ -427,7 +430,7 @@ li {
 }
 
 #contact {
-	margin-bottom: 120px;
+	margin-bottom: 100px;
 }
 
 #contact-writing {
