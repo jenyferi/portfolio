@@ -142,7 +142,7 @@ $(document).ready(function () {
 
 		  		$("#project" + hashID).fadeIn(fadeTime);
 
-		  		$("#numbers").html("" + (hashID+1) + " / " + numProjects);
+		  		$("#numbers").html("Project " + (hashID+1) + " of " + numProjects);
 
 		  		if (hashID == 3){
 		  			projectImages("android", 6);
@@ -186,7 +186,7 @@ $(document).ready(function () {
 		}
 
 		$("#img-dots").html(dotshtml);
-		$("#dot0").css("color", "#e98a9f"); //highlight first image
+		$("#dot0").css("color", "#9ec0bc"); //highlight first image
 
 		for (var l=0; l<numImages; l++){
 			$("#dot" + l).click(
@@ -209,7 +209,7 @@ $(document).ready(function () {
 		}
 
 		function fadeNext(clickedDot){
-			$("#dot" + k).css("color", "#9ec0bc"); //changes old dot to old color
+			$("#dot" + k).css("color", "#cccccc"); //changes old dot to old color
 
 			if (clickedDot != -1){ //if this was a clicked dot
 				k = clickedDot;
@@ -221,7 +221,7 @@ $(document).ready(function () {
 				}
 			}
 
-			$("#dot" + k).css("color", "#e98a9f");
+			$("#dot" + k).css("color", "#9ec0bc");
 
 			$("#" + projectName + k).delay(delayTime).fadeIn(fadeTime, 
 				function(){
