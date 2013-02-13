@@ -58,9 +58,8 @@ li {
 }
 
 .curly {
-	color: #e98a9f;
 	font-family: 'Cookie', cursive;
-	font-size: 2.1em;
+	font-size: 1.8em;
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -107,24 +106,6 @@ li {
 	padding-right: 62px;
 }
 
-#ba {
-	position: absolute;
-	left: 50%;
-	margin-left: 25px;
-	margin-top: 10px;
-	font-size: 1em;
-}
-
-#ba:hover, #about-nav-link:hover, #work-nav-link:hover, #contact-nav-link:hover {
-	cursor: pointer;
-	cursor: hand;
-}
-
-#about-link:hover, #work-link:hover, #contact-link:hover {
-	cursor: pointer;
-	cursor: hand;
-}
-
 #intro-top {
 	margin-top: 150px;
 	color: #636363;
@@ -140,10 +121,14 @@ li {
 
 #intro-second {
 	text-align: center;
-	margin-top: 10px;
+	padding-top: 5px;
 	margin-bottom: 120px;
 	font-size: 1.5em;
 	line-height: 1.4em;
+}
+
+#intro-second-thirdline {
+	padding-top: 10px;
 }
 
 .arrow {
