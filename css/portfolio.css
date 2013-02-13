@@ -105,7 +105,7 @@ li {
 }
 
 #intro-top {
-	margin-top: 20px;
+	margin-top: 30px;
 	color: #636363;
 	margin-bottom: 15px;
 	text-align: center;
@@ -385,6 +385,15 @@ li {
 	cursor: hand;
 }
 
+#familyleafblog-imgs {
+	height: 430px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 780px;
+}
+
 #android-imgs {
 	height: 412px;
 	margin-top: 5px;
@@ -400,7 +409,7 @@ li {
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
-	width: 688px;
+	width: 780px;
 }
 
 #freise-imgs {

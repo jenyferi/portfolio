@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-	var phillips_html = '<div id="phillips0"><img class="projectimg" src="img/projects/phillips0.png"></div><div id="phillips1"><img class="projectimg" src="img/projects/phillips1.png"></div><div id="phillips2"><img class="projectimg" src="img/projects/phillips2.png"></div><div id="phillips3"><img class="projectimg" src="img/projects/phillips3.png"></div>';
+	var familyleafblog_html = '<div id="blog0"><img class="projectimg" src="img/projects/blog0.jpg"></div><div id="blog1"><img class="projectimg" src="img/projects/blog1.jpg"></div><div id="blog2"><img class="projectimg" src="img/projects/blog2.jpg"></div>';
+
+	var phillips_html = '<div id="phillips0"><img class="projectimg" src="img/projects/phillips0.jpg"></div><div id="phillips1"><img class="projectimg" src="img/projects/phillips1.jpg"></div><div id="phillips2"><img class="projectimg" src="img/projects/phillips2.jpg"></div><div id="phillips3"><img class="projectimg" src="img/projects/phillips3.jpg"></div>';
 
     var android_html = '<div id="android0"><img class="projectimg" src="img/projects/android0.jpg"></div><div id="android1"><img class="projectimg" src="img/projects/android1.jpg"></div><div id="android2"><img class="projectimg" src="img/projects/android2.jpg"></div><div id="android3"><img class="projectimg" src="img/projects/android3.jpg"></div><div id="android4"><img class="projectimg" src="img/projects/android4.jpg"></div><div id="android5"><img class="projectimg" src="img/projects/android5.jpg"></div>';
 
@@ -10,6 +12,7 @@ $(document).ready(function () {
 
     var pirates_html = '<img src="img/pirates.png" alt="pirates">';
 
+    $("#familyleafblog-imgs").html(familyleafblog_html);
     $("#phillips-imgs").html(phillips_html);
     $("#android-imgs").html(android_html);
     $("#wildswans1").html(wildswans_html);
@@ -64,7 +67,7 @@ $(document).ready(function () {
 	}
 
 	//project swap and fade logic
-	var numProjects = 7;
+	var numProjects = 8;
 	var currProject = 0;
 	var fadeTime = 400;
 
@@ -144,11 +147,13 @@ $(document).ready(function () {
 
 		  		$("#numbers").html('Project ' + (hashID+1) + ' of ' + numProjects);
 
-		  		if (hashID == 3){
+		  		if (hashID == 4){
 		  			projectImages("android", 6);
-		  		}else if (hashID == 0){ 
+		  		}else if (hashID == 1){ 
 		  			projectImages("phillips", 4);
-		  		}else if (hashID == 4){ 
+		  		}else if (hashID == 0){ 
+		  			projectImages("blog", 3);
+		  		}else if (hashID == 5){ 
 		  			projectImages("freise", 4);
 		  		}else {
 		  			removeImageDots();
