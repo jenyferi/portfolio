@@ -39,7 +39,7 @@ a {
 }
 
 a:hover {
-	color: #aaaaaa;
+	color: #88ada8;
 }
 
 ul {
@@ -68,7 +68,6 @@ li {
 	font-size: 1.4em;
 	font-family: 'Cookie', cursive;
 	margin-right: 5px;
-	text-transform: lowercase;
 }
 
 .handwritten {
@@ -85,7 +84,7 @@ li {
 }
 
 #logo {
-	left: 100px;
+	left: 10%;
 	position: absolute;
 	width: 123px;
 	height: 143px;
@@ -111,7 +110,7 @@ li {
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
-	font-size: 4.1em;
+	font-size: 4em;
 	text-transform: uppercase;
 	text-shadow: 0.02em 0.04em 0.04em #888888;
 	-webkit-text-stroke: 1px;
@@ -273,11 +272,11 @@ li {
 }
 
 #numbers {
-	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+	text-transform: uppercase;
+	color: #aaaaaa;
 	font-size: 0.9em;
-	color: #9ec0bc;
 	margin-top: 10px;
 }
 
@@ -300,10 +299,7 @@ li {
 }
 
 #button-right {
-	text-transform: uppercase;
-	font-family: 'Lato', sans-serif;
-	font-size: 0.9em;
-	font-weight: 300;
+	font-size: 1em;
 	margin-right: 10px;
 	float: right;
 	margin-top: 50px;
@@ -312,14 +308,10 @@ li {
 #button-right:hover {
 	cursor: pointer;
 	cursor: hand;
-	color: #cccccc;
 }
 
 #button-left {
-	text-transform: uppercase;
-	font-family: 'Lato', sans-serif;
-	font-size: 0.9em;
-	font-weight: 300;
+	font-size: 1em;
 	margin-left: 10px;
 	float: left;
 	margin-top: 50px;
@@ -328,7 +320,6 @@ li {
 #button-left:hover {
 	cursor: pointer;
 	cursor: hand;
-	color: #cccccc;
 }
 
 .workbox-title {

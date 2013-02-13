@@ -142,7 +142,7 @@ $(document).ready(function () {
 
 		  		$("#project" + hashID).fadeIn(fadeTime);
 
-		  		$("#numbers").html("Project " + (hashID+1) + " of " + numProjects);
+		  		$("#numbers").html('Project ' + (hashID+1) + ' of ' + numProjects);
 
 		  		if (hashID == 3){
 		  			projectImages("android", 6);
