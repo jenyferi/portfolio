@@ -238,7 +238,7 @@ $(document).ready(function () {
 
 
 	// arrow hovers 
-	$("#button-right-img").hover(
+	/*$("#button-right-img").hover(
 		function(){this.src = this.src.replace("img/arrow_right.png","img/arrow_right_hover.png");},
 		function(){this.src = this.src.replace("img/arrow_right_hover.png","img/arrow_right.png");
     });
@@ -267,7 +267,7 @@ $(document).ready(function () {
 	$("#resume-img").hover(
 		function(){this.src = this.src.replace("img/resume.png","img/resume_hover.png");},
 		function(){this.src = this.src.replace("img/resume_hover.png","img/resume.png");
-	});
+	});*/
 
 	swfobject.embedSWF("flash/castle.swf", "castle1", "680", "425", "9.0.0", "js/expressInstall.swf");
 	swfobject.embedSWF("flash/forest.swf", "forest1", "680", "425", "9.0.0", "js/expressInstall.swf");
