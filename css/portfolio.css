@@ -375,14 +375,37 @@ li {
 	border: 1px #cccccc solid;
 }
 
-#rmgallery1 {
-	margin-top: 5px;
-}
-
 .projectimg {
 	position: absolute;
 	cursor: pointer;
 	cursor: hand;
+}
+
+#astridachievement-imgs {
+	height: 430px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 287px;
+}
+
+#astridandroid-imgs {
+	height: 430px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 242px;
+}
+
+#familyleafonboarding-imgs {
+	height: 430px;
+	margin-top: 5px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 780px;
 }
 
 #familyleafblog-imgs {
