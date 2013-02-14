@@ -54,7 +54,7 @@ li {
 }
 
 .border-standard {
-	border: 5px #ffffff solid;
+	border: 3px #ffffff solid;
 }
 
 .curly {
@@ -287,34 +287,44 @@ li {
 	margin-right: auto;
 	margin-top: 40px;
 	text-align: center;
-	width: 900px;
+	width: 850px;
 	height: 630px;
 	background-color: #f3f3f3;
 	background-image:url('../img/papertexture_light.png');
 }
 
-#button-right {
+.button {
+	left: 50%;
 	font-size: 1em;
-	margin-right: 10px;
-	float: right;
-	margin-top: 50px;
+	position: absolute;
+	height: 43px;
+	width: 43px;
+	margin-top: 315px;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */      
+    zoom: 1;
 }
 
-#button-right:hover {
+.button:hover {
 	cursor: pointer;
 	cursor: hand;
+	opacity:1;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+#button-right {
+	/*450-21*/
+	margin-left: 449px;
+	background-image: url('../img/arrow_right.png');
 }
 
 #button-left {
-	font-size: 1em;
-	margin-left: 10px;
-	float: left;
-	margin-top: 50px;
-}
-
-#button-left:hover {
-	cursor: pointer;
-	cursor: hand;
+	/*450 + 21*/
+	margin-left: -491px;
+	background-image: url('../img/arrow_left.png');
 }
 
 .workbox-title {
@@ -398,6 +408,7 @@ li {
 .familyleafonboarding-img {
 	/*width: 780px;*/
 	margin-left: -390px;
+	border: 1px solid #dddddd;
 }
 
 #familyleafblog-imgs {
@@ -407,6 +418,7 @@ li {
 .familyleafblog-img {
 	/*width: 780px;*/
 	margin-left: -390px;
+	border: 1px solid #dddddd;
 }
 
 #phillips-imgs {
@@ -485,7 +497,7 @@ li {
 }
 
 #footer {
-	margin-top: 50px;
+	margin-top: 80px;
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;

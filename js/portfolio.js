@@ -76,9 +76,6 @@ $(document).ready(function () {
 		$("#project" + i).fadeOut(0); //fade out all except first
 	}
 
-	//starting project
-	projectImages("phillips", 4);
-
 	var hashname = "project";
 	var prevProject = 1; //first project
 	var newProject = 1;
