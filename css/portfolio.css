@@ -1,9 +1,14 @@
+* {
+	margin: 0;
+}
+
 html {
 	width: 100%;
 	height: 100%;
 }
 
 body {
+	height: 100%;
 	font-family: 'Vollkorn', serif;
 	font-weight: 400;
 	background-image:url('../img/papertexture.png');
@@ -54,7 +59,7 @@ li {
 }
 
 .border-standard {
-	border: 5px #ffffff solid;
+	border: 2px #ffffff solid;
 }
 
 .curly {
@@ -149,6 +154,7 @@ li {
 	background-image:url('../img/arrow_blackthread_texture.png');
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 }
 
 .arrow a {
@@ -169,57 +175,6 @@ li {
 	margin-top: 5px;
 	margin-bottom: 15px;
 	*margin-top: 20px;
-}
-
-.line{
-	border-top: 2px #bbbbbb dotted;
-	margin-right: 100px;
-	margin-left: 100px;
-}
-
-#chart {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 5px;
-	margin-bottom: 15px;
-}
-
-#history {
-	width: 974px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-	margin-bottom: 130px;
-}
-
-#history li {
-	display: inline-block;
-	vertical-align: middle;
-	zoom: 1;
-	*display: inline;
-}
-
-#history-text {
-	margin-top: 15px;
-}
-
-#history-text li {
-	font-size: 0.9em;
-	display: inline-block;
-	text-align: center;
-	width: 164px;
-	line-height: 1.6em;
-	vertical-align: top;
-	zoom: 1;
-	*display: inline;
-}
-
-.history-title {
-	text-transform: uppercase;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 1em;
 }
 
 .not-right-img {
@@ -285,12 +240,7 @@ li {
 .workbox {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 40px;
 	text-align: center;
-	width: 900px;
-	height: 630px;
-	background-color: #f3f3f3;
-	background-image:url('../img/papertexture_light.png');
 }
 
 #button-right {
@@ -318,7 +268,15 @@ li {
 }
 
 .workbox-title {
-	margin-top: 10px;
+	/*color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	height: 96px;
+	width: 565px;
+	background-repeat: no-repeat;
+	padding-top: 26px;
+	background-image:url('../img/arrow_blackthread_texture.png');*/
+	padding-top: 20px;
 	margin-bottom: 5px;
 	font-size: 1.8em;
 	text-align: center;
@@ -331,16 +289,28 @@ li {
 }
 
 .workbox-description {
-	margin-left: 110px;
-	margin-right: 110px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 20px;
 	font-size: 1em;
-	text-align: center;
 	padding: 0px;
+	width: 700px;
+}
+
+.line {
+	width: 100%;
+	height: 10px;
+	background-repeat: repeat-x;
 }
 
 .project {
-	height: 520px;
+	height: 630px;
+	background-image: url('../img/papertexture_light.png');
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 80px;
+	border: 2px solid #ffffff;
 }
 
 #castle1 {
@@ -398,6 +368,7 @@ li {
 .familyleafonboarding-img {
 	/*width: 780px;*/
 	margin-left: -390px;
+	border: 1px solid #dddddd;
 }
 
 #familyleafblog-imgs {
@@ -407,6 +378,7 @@ li {
 .familyleafblog-img {
 	/*width: 780px;*/
 	margin-left: -390px;
+	border: 1px solid #dddddd;
 }
 
 #phillips-imgs {
@@ -485,7 +457,8 @@ li {
 }
 
 #footer {
-	margin-top: 50px;
+	position: absolute;
+	margin-top: 100px;
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;

@@ -67,8 +67,16 @@ $(document).ready(function () {
 		player.api("pause");
 	}
 
+	projectImages("phillips", 4);
+	projectImages("onboarding", 5);
+	projectImages("blog", 3);
+	projectImages("achievement", 4);
+	projectImages("astridandroid", 5);
+
+	var fadeTime = 400;
+	
 	//project swap and fade logic
-	var numProjects = 9;
+/*	var numProjects = 9;
 	var currProject = 0;
 	var fadeTime = 400;
 
@@ -78,8 +86,8 @@ $(document).ready(function () {
 
 	//starting project
 	projectImages("phillips", 4);
-
-	var hashname = "project";
+*/
+	/*var hashname = "project";
 	var prevProject = 1; //first project
 	var newProject = 1;
 
@@ -147,12 +155,12 @@ $(document).ready(function () {
 		  		$("#project" + hashID).fadeIn(fadeTime);
 
 		  		$("#numbers").html('Project ' + (hashID+1) + ' of ' + numProjects);
-
+/*
 		  		/*if (hashID == 4){
 		  			projectImages("android", 6);
 		  		}else */
 
-		  		if (hashID == 4){ 
+/*		  		if (hashID == 4){ 
 		  			projectImages("phillips", 4);
 		  		}else if (hashID == 0){ 
 		  			projectImages("onboarding", 5);
@@ -165,13 +173,14 @@ $(document).ready(function () {
 		  		}else {
 		  			removeImageDots();
 		  		}
-
+*/
 		  		/*else if (hashID == 5){ 
 		  			projectImages("freise", 4);
 		  		}*/
-  			}
+ /* 			}
   		);
 	}
+	*/
 
 	//projects
 	function projectImages(projectName, numImages){
@@ -250,40 +259,6 @@ $(document).ready(function () {
 	function removeImageDots(){
 		$("#img-dots").html("");
 	}
-	////////////////////////////////////////////////////////////////////////////////////////
-
-
-	// arrow hovers 
-	/*$("#button-right-img").hover(
-		function(){this.src = this.src.replace("img/arrow_right.png","img/arrow_right_hover.png");},
-		function(){this.src = this.src.replace("img/arrow_right_hover.png","img/arrow_right.png");
-    });
-
-    $("#button-left-img").hover(
-		function(){this.src = this.src.replace("img/arrow_left.png","img/arrow_left_hover.png");},
-		function(){this.src = this.src.replace("img/arrow_left_hover.png","img/arrow_left.png");
-    });
-
-	//link logo hovers
-	$("#pinterest-img").hover(
-		function(){this.src = this.src.replace("img/github.png","img/github_hover.png");},
-		function(){this.src = this.src.replace("img/github_hover.png","img/github.png");
-	});
-
-	$("#linkedin-img").hover(
-		function(){this.src = this.src.replace("img/linkedin.png","img/linkedin_hover.png");},
-		function(){this.src = this.src.replace("img/linkedin_hover.png","img/linkedin.png");
-	});
-
-	$("#email-img").hover(
-		function(){this.src = this.src.replace("img/email.png","img/email_hover.png");},
-		function(){this.src = this.src.replace("img/email_hover.png","img/email.png");
-	});
-
-	$("#resume-img").hover(
-		function(){this.src = this.src.replace("img/resume.png","img/resume_hover.png");},
-		function(){this.src = this.src.replace("img/resume_hover.png","img/resume.png");
-	});*/
 
 	swfobject.embedSWF("flash/castle.swf", "castle1", "680", "425", "9.0.0", "js/expressInstall.swf");
 	swfobject.embedSWF("flash/forest.swf", "forest1", "680", "425", "9.0.0", "js/expressInstall.swf");
