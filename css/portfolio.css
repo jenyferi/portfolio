@@ -101,7 +101,7 @@ li {
 #intro-top {
 	margin-top: 25px;
 	color: #636363;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	text-align: center;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
@@ -111,10 +111,18 @@ li {
 	-webkit-text-stroke: 1px;
 }
 
+.borderline {
+	border-top: 2px solid #cccccc;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #intro-second {
+	margin-top: 5px;
 	text-align: center;
 	padding-top: 5px;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	font-size: 1.5em;
 	line-height: 1.4em;
 }
@@ -124,20 +132,21 @@ li {
 }
 
 #intro-third {
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-top: 15px;
+	margin-bottom: 13px;
 	font-size: 1.3em;
 	line-height: 1.4em;
 }
 
 #intro-fourth {
-	margin-top: 40px;
-	font-size: 1.3em;
+	margin-top: 13px;
+	font-size: 1.8em;
 	line-height: 1.4em;
+	margin-bottom: 5px;
 }
 
 .arrow {
-	margin-top: -58px;
+	margin-top: -68px;
 	height: 96px;
 	width: 565px;
 	text-align: center;
@@ -484,7 +493,6 @@ li {
 	clear: both;
 	text-align: center;
 	padding: 0px;
-	margin-top: 10px;
 }
 
 #contact-images li {
@@ -497,7 +505,7 @@ li {
 }
 
 #footer {
-	margin-top: 80px;
+	margin-top: 70px;
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
