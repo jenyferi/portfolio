@@ -70,14 +70,8 @@ li {
 	margin-right: 5px;
 }
 
-.handwritten {
-	font-family: 'Waiting for the Sunrise', cursive;
-	font-size: 1.1em;
-	color: #8b796d;
-}
-
 #navbar{
-	background-color: #8b796d;
+	background-color: #848484;
     height: 10px;
     width: 100%;
 	background-image:url('../img/fabric_gray.jpg');
@@ -105,7 +99,7 @@ li {
 }
 
 #intro-top {
-	margin-top: 30px;
+	margin-top: 25px;
 	color: #636363;
 	margin-bottom: 15px;
 	text-align: center;
@@ -131,7 +125,7 @@ li {
 
 #intro-third {
 	margin-top: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	font-size: 1.3em;
 	line-height: 1.4em;
 }
@@ -360,7 +354,7 @@ li {
 }
 
 #pirates1 {
-	margin-top: 5px;
+	margin-top: 15px;
 }
 
 #wildswans1 {
@@ -463,6 +457,10 @@ li {
 	height: 43px;
 	opacity:0.8;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */      
+    zoom: 1;
 }
 
 .link-imgs:hover {
@@ -491,13 +489,13 @@ li {
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
-	background-color: #8b796d;
+	background-color: #848484;
     height: 20px;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 1em;
-	background-image:url('../img/fabric_gray.png');
+	background-image:url('../img/fabric_gray.jpg');
 }
 
 #copyright {
