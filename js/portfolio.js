@@ -71,6 +71,7 @@ $(document).ready(function () {
 	var numProjects = 9;
 	var currProject = 0;
 	var fadeTime = 400;
+	var isFadedIn = true;
 
 	for (var i=1; i<numProjects; i++){
 		$("#project" + i).fadeOut(0); //fade out all except first
@@ -84,10 +85,14 @@ $(document).ready(function () {
 	var newProject = 1;
 
 	$(".button").click(function() {
-		var currButtonID = $(this).attr('id');
+		if (isFadedIn){
+			isFadedIn = false;
 
-		updateCurrentProject(currButtonID);
-		changeHash();
+			var currButtonID = $(this).attr('id');
+
+			updateCurrentProject(currButtonID);
+			changeHash();
+		}	
 	});
 
 	function changeHash() {
@@ -126,7 +131,7 @@ $(document).ready(function () {
 			}
 			newProject = 1;
 		}
-
+		
 		loadProject(newProject); 
 	})
 
@@ -137,6 +142,7 @@ $(document).ready(function () {
 		hashID = hashID - 1;
 		prevProject = prevProject - 1;
 		//console.log("previous project = " + prevProject);
+
 		$("#project" + prevProject).fadeOut(fadeTime, 
   			function(){
 				if (is_ws_playing){
@@ -144,7 +150,7 @@ $(document).ready(function () {
 					is_ws_playing = false;
 				}
 
-		  		$("#project" + hashID).fadeIn(fadeTime);
+			  	$("#project" + hashID).fadeIn(fadeTime, function(){console.log(isFadedIn); isFadedIn = true;});
 
 		  		$("#numbers").html('Project ' + (hashID+1) + ' of ' + numProjects);
 
